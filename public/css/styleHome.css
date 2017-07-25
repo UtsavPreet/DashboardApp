@@ -15,7 +15,7 @@ html {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #EEEFF0;
-  font-weight: 200;
+  font-weight: 300;
 }
 .mainContainer .sideBar {
   position: absolute;
@@ -302,7 +302,8 @@ html {
   left: 38rem;
   right: 33rem;
   border: 0.2rem solid #F5F5F6;
-  border-style: none,solid;
+  border-top: none;
+  border-bottom: none;
   background-color: #fff;
 }
 .mainContainer .mainDiv .userDetails .userCard {
@@ -446,4 +447,197 @@ html {
   position: absolute;
   height: 1.8rem;
   margin-left: 0.5rem;
+}
+.mainContainer .mainDiv .userInfo {
+  position: absolute;
+  top: 12rem;
+  width: 33rem;
+  right: 0;
+  bottom: 0;
+}
+.mainContainer .mainDiv .userInfo .infoCard {
+  position: absolute;
+  top: 0;
+  height: 15rem;
+  width: 100%;
+}
+.mainContainer .mainDiv .userInfo .infoCard .headingText {
+  position: absolute;
+  margin: 1rem;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+.mainContainer .mainDiv .userInfo .infoCard .aboutText {
+  position: absolute;
+  height: 4rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  left: 1rem;
+  right: 5rem;
+  word-break: break-all;
+}
+.mainContainer .mainDiv .userInfo .infoCard .contactDetails {
+  position: relative;
+  top: 8rem;
+  height: 4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.mainContainer .mainDiv .userInfo .infoCard .contactDetails .heading {
+  position: relative;
+  float: left;
+  margin-left: 1rem;
+  color: #3F7AB5;
+}
+.mainContainer .mainDiv .userInfo .infoCard .contactDetails .detail {
+  position: relative;
+  float: right;
+  margin-right: 15rem;
+}
+.mainContainer .mainDiv .userInfo .eventCard {
+  position: absolute;
+  top: 15rem;
+  height: 15rem;
+  background-color: #fff;
+  width: 100%;
+  overflow-y: scroll;
+}
+.mainContainer .mainDiv .userInfo .eventCard .headingText {
+  position: absolute;
+  margin: 1rem;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+.mainContainer .mainDiv .userInfo .eventCard .eventData {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
+  top: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.mainContainer .mainDiv .userInfo .eventCard .eventData .dot {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border: 0.3rem solid #F47357;
+  border-radius: 1rem;
+  top: 1rem;
+  left: 1.2rem;
+}
+.mainContainer .mainDiv .userInfo .eventCard .eventData .time {
+  position: absolute;
+  height: 2rem;
+  top: 0.5rem;
+  line-height: 2rem;
+  background-color: #F47357;
+  border-radius: 0.6rem;
+  color: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 3rem;
+}
+.mainContainer .mainDiv .userInfo .eventCard .eventData .eventText {
+  position: absolute;
+  top: 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  left: 7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #CCD3E2;
+}
+.mainContainer .mainDiv .userInfo .eventCard .eventData .tableNumber {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: #CCD3E2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.mainContainer .mainDiv .userInfo .dinningCard {
+  position: absolute;
+  top: 30rem;
+  bottom: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .headingText {
+  position: absolute;
+  margin: 1rem;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
+  top: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .dot {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border: 0.3rem solid #F47357;
+  border-radius: 1rem;
+  top: 1rem;
+  left: 1.2rem;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .time {
+  position: absolute;
+  height: 2rem;
+  top: 0.5rem;
+  line-height: 2rem;
+  background-color: #F47357;
+  border-radius: 0.6rem;
+  color: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 3rem;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .eventText {
+  position: absolute;
+  top: 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  left: 7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #CCD3E2;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .tableNumber {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: #CCD3E2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .blue {
+  border-color: #2060A9;
+  background-color: #2060A9;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .grey {
+  border-color: grey;
+  background-color: grey;
+}
+.mainContainer .mainDiv .userInfo .dinningCard .dinningData .green {
+  border-color: green;
+  background-color: green;
 }
