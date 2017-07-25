@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  font-size: 10px;
+}
+.mainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #EEEFF0;
+}
+.mainContainer .sideBar {
+  position: absolute;
+  background-color: #30333A;
+  height: 100%;
+  width: 4%;
+}
+.mainContainer .sideBar .activeIcon {
+  position: absolute;
+  background-color: #2060A9;
+  height: 6rem;
+  width: 100%;
+}
+.mainContainer .sideBar .sideBarIcon {
+  height: 3rem;
+  margin: 1rem;
+}
+.mainContainer .sideBar .inactiveIcon {
+  position: relative;
+  top: 20rem;
+}
+.mainContainer .sideBar .lastIcon {
+  position: absolute;
+  bottom: 3rem;
+}
+.mainContainer .mainDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96%;
+  left: 4%;
+}
+.mainContainer .mainDiv .topBar {
+  position: absolute;
+  top: 0;
+  height: 6rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 0.2rem solid #F5F5F6;
+}
+.mainContainer .mainDiv .topBar .genericName {
+  position: absolute;
+  margin: 2rem;
+  margin-left: 4rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #2060A9;
+}
+.mainContainer .mainDiv .topBar .adminName {
+  position: absolute;
+  right: 20rem;
+  margin-top: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #3F7AB5;
+}
+.mainContainer .mainDiv .topBar .addDiv {
+  position: absolute;
+  height: 6rem;
+  right: 0;
+  background-color: #2060A9;
+}
+.mainContainer .mainDiv .topBar .addDiv .addBtn {
+  margin: 1rem;
+  height: 4rem;
+}
+.mainContainer .mainDiv .filterContainer {
+  position: absolute;
+  top: 0;
+  height: 6rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 0.2rem solid #F5F5F6;
+  top: 6rem;
+}
+.mainContainer .mainDiv .filterContainer .genericName {
+  position: absolute;
+  margin: 2rem;
+  margin-left: 4rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #2060A9;
+}
+.mainContainer .mainDiv .filterContainer .adminName {
+  position: absolute;
+  right: 20rem;
+  margin-top: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #3F7AB5;
+}
+.mainContainer .mainDiv .filterContainer .addDiv {
+  position: absolute;
+  height: 6rem;
+  right: 0;
+  background-color: #2060A9;
+}
+.mainContainer .mainDiv .filterContainer .addDiv .addBtn {
+  margin: 1rem;
+  height: 4rem;
+}
+.mainContainer .mainDiv .filterContainer .filterText {
+  position: absolute;
+  margin: 1rem;
+  margin-left: 2rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.mainContainer .mainDiv .filterContainer .inactiveFilterText {
+  position: absolute;
+  margin: 1rem;
+  margin-left: 2rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  left: 13rem;
+  margin-left: 3rem;
+  color: #CCD3E2;
+}
+.mainContainer .mainDiv .filterContainer .secondinactiveFilterText {
+  position: absolute;
+  margin: 1rem;
+  margin-left: 2rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  left: 13rem;
+  margin-left: 3rem;
+  margin-left: 15rem;
+  color: #CCD3E2;
+}
+.mainContainer .mainDiv .userList {
+  position: absolute;
+  top: 12rem;
+  bottom: 0;
+  background-color: #fff;
+  width: 33rem;
+  overflow: auto;
+}
+.mainContainer .mainDiv .userList .searchBar {
+  position: absolute;
+  height: 4rem;
+  left: 2rem;
+  right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #C1C1C1;
+  border-radius: 2rem;
+}
+.mainContainer .mainDiv .userList .searchBar .searchText {
+  position: absolute;
+  left: 0;
+  height: 4rem;
+  line-height: 4rem;
+  color: #3F7AB5;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-left: 1rem;
+}
+.mainContainer .mainDiv .userList .searchBar .phoneText {
+  position: absolute;
+  height: 4rem;
+  line-height: 4rem;
+  color: #3F7AB5;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-right: 1rem;
+  right: 0;
+}
+.mainContainer .mainDiv .userList .users {
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+  right: 1rem;
+  height: 5rem;
+  line-height: 5rem;
+}
+.mainContainer .mainDiv .userList .users .name {
+  position: relative;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-left: 1rem;
+  float: left;
+}
+.mainContainer .mainDiv .userList .users .number {
+  position: relative;
+  color: #CCD3E2;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-right: 1rem;
+  float: right;
+}

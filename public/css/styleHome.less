@@ -1,0 +1,180 @@
+@fontSize: 1.8rem;
+@disabledTextColor: #CCD3E2;
+@textColor: #3F7AB5;
+@divColor: #2060A9;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+.mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEEFF0;
+    .sideBar {
+        position: absolute;
+        background-color: #30333A;
+        height: 100%;
+        width: 4%;
+        .activeIcon {
+            position: absolute;
+            background-color: @divColor;
+            height: 6rem;
+            width: 100%;
+        }
+        .sideBarIcon {
+            height: 3rem;
+            margin: 1rem;
+        }
+        .inactiveIcon {
+            position: relative;
+            top: 20rem;
+        }
+        .lastIcon {
+            position: absolute;
+            bottom: 3rem;
+        }
+    }
+    .mainDiv {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 96%;
+        left: 4%;
+        .topBar {
+            position: absolute;
+            top: 0;
+            height: 6rem;
+            width: 100%;
+            background-color: #FFFFFF;
+            border-bottom: 0.2rem solid #F5F5F6;
+            .genericName {
+                position: absolute;
+                margin: 2rem;
+                margin-left: 4rem;
+                height: 2rem;
+                line-height: 2rem;
+                font-weight: 300;
+                font-size: @fontSize;
+                color: @divColor;
+            }
+            .adminName {
+                position: absolute;
+                right: 20rem;
+                margin-top: 2rem;
+                height: 2rem;
+                line-height: 2rem;
+                font-weight: 300;
+                font-size: @fontSize;
+                color: @textColor;
+            }
+            .addDiv {
+                position: absolute;
+                height: 6rem;
+                right: 0;
+                background-color: @divColor;
+                .addBtn {
+                    margin: 1rem;
+                    height: 4rem;
+                }
+            }
+        }
+        .filterContainer {
+            .mainContainer.mainDiv.topBar();
+            top: 6rem;
+            .filterText {
+                position: absolute;
+                margin: 1rem;
+                margin-left: 2rem;
+                height: 4rem;
+                line-height: 4rem;
+                font-weight: 300;
+                font-size: @fontSize;
+            }
+            .inactiveFilterText {
+                .filterText();
+                left: 13rem;
+                margin-left: 3rem;
+                color: @disabledTextColor;
+            }
+            .secondinactiveFilterText {
+                .inactiveFilterText();
+                margin-left: 15rem;
+                color: @disabledTextColor;
+            }
+        }
+        .userList {
+            position: absolute;
+            top: 12rem;
+            bottom: 0;
+            background-color: #fff;
+            width: 33rem;
+            overflow: auto;
+            .searchBar {
+                position: absolute;
+                height: 4rem;
+                left: 2rem;
+                right: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                border: 0.1rem solid #C1C1C1;
+                border-radius: 2rem;
+                .searchText {
+                    position: absolute;
+                    left: 0;
+                    height: 4rem;
+                    line-height: 4rem;
+                    color: #3F7AB5;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    padding-left: 1rem;
+                }
+                .phoneText {
+                    position: absolute;
+                    height: 4rem;
+                    line-height: 4rem;
+                    color: @textColor;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    padding-right: 1rem;
+                    right: 0;
+                }
+            }
+            .users {
+                position: absolute;
+                top: 8rem;
+                left: 1rem;
+                right: 1rem;
+                height: 5rem;
+                line-height: 5rem;
+                .name {
+                    position: relative;
+                    color: #000;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    padding-left: 1rem;
+                    float: left;
+                }
+                .number {
+                    position: relative;
+                    color: @disabledTextColor;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    padding-right: 1rem;
+                    float: right;
+                }
+            }
+        }
+    }
+}
