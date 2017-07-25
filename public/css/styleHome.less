@@ -205,6 +205,7 @@ html {
             width: 5rem;
             left: 33rem;
             background-color: #EEEFF0;
+            overflow-y: auto;
             .alpha {
                 position: relative;
                 text-align: center;
@@ -234,6 +235,7 @@ html {
             border-top: none;
             border-bottom: none;
             background-color: #fff;
+            overflow-y: auto;
             .userCard {
                 position: absolute;
                 top: 0;
@@ -365,6 +367,141 @@ html {
                     padding-right: 0.8rem;
                     border: 0.1rem solid @divColor;
                     border-radius: 2rem;
+                }
+            }
+        }
+        .userInfo {
+                position: absolute;
+                top: 12rem;
+                width: 33rem;
+                right: 0;
+                bottom: 0;
+                .infoCard {
+                    position: absolute;
+                    top: 0;
+                    height: 15rem;
+                    width: 100%;
+                    .headingText {
+                        position: absolute;
+                        margin: 1rem;
+                        color: black;
+                        text-transform: uppercase;
+                        font-size: 1.2rem;
+                        line-height: 1rem;
+                        font-weight: 500;
+                    }
+                    .aboutText {
+                        position: absolute;
+                        height: 4rem;
+                        line-height: 2rem;
+                        margin-top: 3rem;
+                        font-size: 1.2rem;
+                        left: 1rem;
+                        right: 5rem;
+                        word-break: break-all;
+                    }
+                    .contactDetails {
+                        position: relative;
+                        top: 8rem;
+                        height: 4rem;
+                        line-height: 2rem;
+                        font-weight: 400;
+                        .heading {
+                            position: relative;
+                            float: left;
+                            margin-left: 1rem;
+                            color: @textColor;
+                        }
+                        .detail {
+                            position: relative;
+                            float: right;
+                            margin-right: 15rem;
+                        }
+                    }
+                }
+                .eventCard {
+                    position: absolute;
+                    top: 15rem;
+                    height: 15rem;
+                    background-color: #fff;
+                    width: 100%;
+                    overflow-y: scroll;
+                    .headingText {
+                        .mainContainer .mainDiv .userInfo .infoCard .headingText();
+                    }
+                    .eventData {
+                        position: relative;
+                        height: 3rem;
+                        line-height: 3rem;
+                        top: 3rem;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        .dot {
+                            position: absolute;
+                            height: 1rem;
+                            width: 1rem;
+                            border: 0.3rem solid #F47357;
+                            border-radius: 1rem;
+                            top: 1rem;
+                            left: 1.2rem;
+                        }
+                        .time {
+                            position: absolute;
+                            height: 2rem;
+                            top: 0.5rem;
+                            line-height: 2rem;
+                            background-color: #F47357;
+                            border-radius: 0.6rem;
+                            color: #fff;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 3rem;
+                        }
+                        .eventText {
+                            position: absolute;
+                            top: 0.5rem;
+                            height: 2rem;
+                            line-height: 2rem;
+                            left: 7rem;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            color: @disabledTextColor;
+                    }
+                    .tableNumber{
+                        position: absolute;
+                        right: 2rem;
+                        top: 0.5rem;
+                        height: 2rem;
+                        line-height: 2rem;
+                        color: @disabledTextColor;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .dinningCard {
+                position: absolute;
+                top: 30rem;
+                bottom: 0;
+                width: 100%;
+                overflow-y:scroll; 
+                .headingText {
+                    .mainContainer .mainDiv .userInfo .infoCard .headingText();
+                }
+                .dinningData{
+                    .mainContainer .mainDiv .userInfo .eventCard .eventData();
+                    .blue{
+                    border-color: @divColor;
+                    background-color: @divColor;
+                }
+                .grey{
+                    border-color: grey;
+                    background-color: grey;
+                }
+                .green{
+                    border-color: green;
+                    background-color:green;
+                }
                 }
             }
         }
