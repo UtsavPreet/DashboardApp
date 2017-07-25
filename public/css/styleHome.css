@@ -15,6 +15,7 @@ html {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #EEEFF0;
+  font-weight: 200;
 }
 .mainContainer .sideBar {
   position: absolute;
@@ -172,7 +173,7 @@ html {
   left: 2rem;
   right: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 0.1rem solid #C1C1C1;
   border-radius: 2rem;
 }
@@ -198,11 +199,11 @@ html {
 }
 .mainContainer .mainDiv .userList .users {
   position: relative;
-  top: 8rem;
+  top: 6rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
 }
 .mainContainer .mainDiv .userList .users .name {
   position: relative;
@@ -237,7 +238,7 @@ html {
   left: 2rem;
   right: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 0.1rem solid #C1C1C1;
   border-radius: 2rem;
 }
@@ -263,11 +264,11 @@ html {
 }
 .mainContainer .mainDiv .alphabet .users {
   position: relative;
-  top: 8rem;
+  top: 6rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
 }
 .mainContainer .mainDiv .alphabet .users .name {
   position: relative;
@@ -287,7 +288,7 @@ html {
 }
 .mainContainer .mainDiv .alphabet .alpha {
   position: relative;
-  margin-left: 2.5rem;
+  text-align: center;
   height: 2rem;
   padding-top: 1rem;
   color: #3F7AB5;
@@ -298,9 +299,10 @@ html {
   position: absolute;
   top: 12rem;
   bottom: 0;
-  left: 39rem;
+  left: 38rem;
   right: 33rem;
   border: 0.2rem solid #F5F5F6;
+  border-style: none,solid;
   background-color: #fff;
 }
 .mainContainer .mainDiv .userDetails .userCard {
@@ -323,13 +325,125 @@ html {
   font-weight: 300;
   line-height: 2rem;
 }
-.mainContainer .mainDiv .userDetails .preferenceCard .tags {
+.mainContainer .mainDiv .userDetails .preferenceCard .tagContainer {
+  position: absolute;
+  top: 1rem;
+  height: 4rem;
+  left: 15rem;
+  right: 5rem;
+  overflow-y: scroll;
+}
+.mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags {
+  position: relative;
+  height: 2rem;
+  line-height: 2rem;
+  float: left;
+  color: #3F7AB5;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.mainContainer .mainDiv .userDetails .preferenceCard .addItem {
   position: absolute;
   top: 2rem;
   height: 2rem;
-  border: 0.2rem solid #F5F6F6;
+  right: 1rem;
+  width: 3rem;
+  border: 0.1rem solid #2060A9;
   border-radius: 2rem;
-  font-size: 1rem;
+}
+.mainContainer .mainDiv .userDetails .preferenceCard .addItem .addIcon {
+  position: absolute;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+.mainContainer .mainDiv .userDetails .userTags {
+  position: relative;
+  height: 2rem;
+  line-height: 2rem;
+  float: left;
   color: #3F7AB5;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: #51BC51;
+}
+.mainContainer .mainDiv .userDetails .eventHistory {
+  position: relative;
+  top: 24rem;
+  height: 9rem;
+  width: 100%;
+  border-top: 0.2rem solid #F5F5F6;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .cardHeading {
+  position: absolute;
+  margin: 2rem;
+  color: #CCD3E2;
+  font-size: 1.2rem;
   font-weight: 300;
+  line-height: 4rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventName {
+  position: absolute;
+  height: 9rem;
+  left: 15rem;
+  overflow: auto;
+  right: 24rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventName .eventTag {
+  position: relative;
+  height: 2rem;
+  line-height: 2rem;
+  color: #3F7AB5;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .visitCounter {
+  position: absolute;
+  height: 9rem;
+  left: 27rem;
+  width: 15rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .visitCounter .headingText {
+  position: relative;
+  margin-top: 1rem;
+  height: 2rem;
+  color: #CCD3E2;
+  font-size: 1.2rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .visitCounter .tag {
+  position: relative;
+  line-height: 2rem;
+  color: #3F7AB5;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .addItem {
+  position: absolute;
+  top: 2rem;
+  height: 2rem;
+  right: 1rem;
+  width: 3rem;
+  border: 0.1rem solid #2060A9;
+  border-radius: 2rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .addItem .addIcon {
+  position: absolute;
+  height: 1.8rem;
+  margin-left: 0.5rem;
 }
