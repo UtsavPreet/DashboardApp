@@ -2,10 +2,12 @@
 @disabledTextColor: #CDD4DE;
 @alphabetColor: #BDC4D5;
 @textColor: #5C91D2;
-@divColor: #1B5EAC;
+@topAdd: #1B5EAC;
+@divColor: #5387DE;
 @borderColor: #EFEFEF;
 @sideBarColor: #2F323A;
 @backgroundPage: #FBFBFB;
+@green: #52BB52;
 * {
     padding: 0;
     margin: 0;
@@ -104,7 +106,7 @@ html {
                 line-height: 6rem;
                 right: 0;
                 font-size: 5rem;
-                background-color: @divColor;
+                background-color: @topAdd;
                 color: #fff;
                 padding-left: 3rem;
                 padding-right: 3rem;
@@ -170,47 +172,52 @@ html {
                     right: 0;
                 }
             }
-            .users {
-                position: relative;
-                top: 6rem;
-                margin-left: 1rem;
-                margin-right: 1rem;
-                height: 6rem;
-                line-height: 6rem;
-                color: #000;
-                .name {
+            .userContainer {
+                position: absolute;
+                top: 7rem;
+                bottom: 0;
+                width: 100%;
+                .users {
                     position: relative;
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    padding-left: 1rem;
-                    float: left;
-                }
-                .number {
-                    position: relative;
-                    color: @disabledTextColor;
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    padding-right: 1rem;
-                    float: right;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    height: 4rem;
+                    line-height: 4rem;
+                    color: #000;
+                    .name {
+                        position: relative;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        padding-left: 1rem;
+                        float: left;
+                    }
+                    .number {
+                        position: relative;
+                        color: @disabledTextColor;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        padding-right: 1rem;
+                        float: right;
+                    }
                 }
             }
         }
         .selected {
-            .mainContainer .mainDiv .userDiv .users();
+            .mainContainer .mainDiv .userDiv .userContainer .users();
             background-color: #458ACF;
             color: #F5F5F6;
         }
         .alphabet {
             .userDiv();
+            padding-top: 1rem;
             width: 5rem;
             left: 33rem;
             background-color: #EEEFF0;
-            overflow-y: auto;
             .alpha {
                 position: relative;
                 text-align: center;
-                font-size: 1.5rem;
-                padding: 0.8rem;
+                font-size: 1.2rem;
+                padding-top: 0.5rem;
                 color: #BDC4D5;
                 font-weight: 300;
                 text-transform: uppercase;
@@ -222,8 +229,8 @@ html {
             background-color: @backgroundPage;
             border: 0.1rem solid @backgroundPage;
             border-radius: 4rem;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
+            margin-left: 1.2rem;
+            margin-right: 1.2rem;
         }
         .userDetails {
             position: absolute;
@@ -235,55 +242,54 @@ html {
             border-top: none;
             border-bottom: none;
             background-color: #fff;
-            overflow-y: auto;
             .userCard {
-                position: absolute;
-                top: 0;
-                bottom: 48rem;
+                position: relative;
+                height: 22rem;
                 width: 100%;
             }
             .preferenceCard {
                 position: relative;
-                top: 42rem;
-                height: 10rem;
+                height: 6rem;
                 width: 100%;
                 border-top: 0.2rem solid #F5F5F6;
                 .cardHeading {
                     position: absolute;
-                    margin: 2rem;
+                    height: 6rem;
+                    left: 2rem;
                     color: @disabledTextColor;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     font-weight: 300;
                     line-height: 6rem;
                 }
                 .tagContainer {
                     position: absolute;
-                    top: 3.3rem;
-                    height: 4rem;
+                    height: 6rem;
                     left: 15rem;
                     right: 5rem;
                     overflow-y: scroll;
                     .tags {
                         position: relative;
-                        height: 3rem;
-                        line-height: 3rem;
+                        margin-top: 2rem;
+                        height: 2rem;
+                        line-height: 2rem;
                         float: left;
                         color: @textColor;
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         border: 0.2rem solid #f5f6f6;
                         border-radius: 2rem;
                         padding-left: 1rem;
                         padding-right: 1rem;
                         margin-left: 1rem;
+                        margin-bottom: 1rem;
                     }
                 }
                 .addItem {
                     position: absolute;
                     top: 3rem;
-                    height: 3rem;
-                    line-height: 3rem;
+                    height: 2rem;
+                    line-height: 2rem;
                     right: 1rem;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 300;
                     color: @textColor;
                     padding-left: 0.8rem;
@@ -298,659 +304,221 @@ html {
             }
             .eventHistory {
                 position: relative;
-                top: 42rem;
-                height: 15rem;
+                height: 12rem;
                 width: 100%;
                 border-top: 0.2rem solid #F5F5F6;
                 .cardHeading {
                     position: absolute;
                     margin: 2rem;
                     color: @disabledTextColor;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     font-weight: 300;
                     line-height: 6rem;
                 }
-                .eventName {
+                .eventData {
                     position: absolute;
-                    height: 9rem;
+                    height: 12rem;
                     left: 15rem;
-                    overflow: auto;
-                    right: 24rem;
-                    .eventTag {
-                        position: relative;
-                        height: 2rem;
-                        line-height: 2rem;
-                        color: @textColor;
-                        border: 0.2rem solid #f5f6f6;
-                        border-radius: 2rem;
-                        padding-left: 1rem;
-                        padding-right: 1rem;
-                        margin-top: 1rem;
-                        margin-left: 1rem;
-                        display: inline-block;
+                    right: 5rem;
+                    overflow-y: auto;
+                    .eventName {
+                        position: absolute;
+                        height: 9rem;
+                        top: 3rem;
+                        left: 0;
+                        right: 17rem;
+                        .eventTag {
+                            position: relative;
+                            line-height: 2rem;
+                            float: left;
+                            color: @textColor;
+                            font-size: 1rem;
+                            border: 0.2rem solid #f5f6f6;
+                            border-radius: 2rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            margin-left: 1rem;
+                            margin-bottom: 1rem;
+                        }
                     }
-                }
-                .visitCounter {
-                    position: absolute;
-                    height: 9rem;
-                    left: 27rem;
-                    width: 15rem;
-                    .headingText {
-                        position: relative;
-                        margin-top: 1rem;
-                        height: 2rem;
-                        color: #CCD3E2;
-                        font-size: 1.2rem;
-                    }
-                    .tag {
-                        position: relative;
-                        line-height: 2rem;
-                        color: @textColor;
-                        border: 0.2rem solid #f5f6f6;
-                        border-radius: 2rem;
-                        padding-left: 1rem;
-                        padding-right: 1rem;
-                        margin-left: 0.5rem;
-                        display: inline-block;
+                    .visitCounter {
+                        position: absolute;
+                        height: 10rem;
+                        top: 2rem;
+                        line-height: 3rem;
+                        right: 1rem;
+                        .headingText {
+                            position: relative;
+                            color: #CCD3E2;
+                            font-size: 1.2rem;
+                            top: 1rem;
+                        }
+                        .tag {
+                            position: relative;
+                            line-height: 2rem;
+                            color: @textColor;
+                            border: 0.2rem solid #f5f6f6;
+                            border-radius: 2rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            margin-left: 0.5rem;
+                            display: inline-block;
+                        }
                     }
                 }
                 .addItem {
                     position: absolute;
                     top: 3rem;
-                    height: 3rem;
-                    line-height: 3rem;
+                    height: 2rem;
+                    line-height: 2rem;
                     right: 1rem;
-                    font-size: 3rem;
-                    font-weight: 400;
-                    color: @textColor;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    color: #5C91D2;
                     padding-left: 0.8rem;
                     padding-right: 0.8rem;
-                    border: 0.1rem solid @divColor;
+                    border: 0.1rem solid #5387DE;
                     border-radius: 2rem;
                 }
             }
         }
         .userInfo {
+            position: absolute;
+            top: 12rem;
+            width: 33rem;
+            right: 0;
+            bottom: 0;
+            .infoCard {
                 position: absolute;
-                top: 12rem;
-                width: 33rem;
-                right: 0;
-                bottom: 0;
-                .infoCard {
-                    position: absolute;
-                    top: 0;
-                    height: 15rem;
-                    width: 100%;
-                    .headingText {
-                        position: absolute;
-                        margin: 1rem;
-                        color: black;
-                        text-transform: uppercase;
-                        font-size: 1.2rem;
-                        line-height: 1rem;
-                        font-weight: 500;
-                    }
-                    .aboutText {
-                        position: absolute;
-                        height: 4rem;
-                        line-height: 2rem;
-                        margin-top: 3rem;
-                        font-size: 1.2rem;
-                        left: 1rem;
-                        right: 5rem;
-                        word-break: break-all;
-                    }
-                    .contactDetails {
+                height: 14rem;
+                width: 100%;
+                .headingText {
+                    position: relative;
+                    margin-top: 0.5rem;
+                    left: 1rem;
+                    color: black;
+                    text-transform: uppercase;
+                    height: 3rem;
+                    font-size: 1.2rem;
+                    line-height: 3rem;
+                    font-weight: 500;
+                }
+                .aboutText {
+                    position: relative;
+                    left: 1rem;
+                    height: 4rem;
+                    font-size: 1.2rem;
+                }
+                .contactDetails {
+                    position: relative;
+                    margin-left: 1rem;
+                    height: 4rem;
+                    line-height: 0rem;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    .heading {
                         position: relative;
-                        top: 8rem;
-                        height: 4rem;
-                        line-height: 2rem;
-                        font-weight: 400;
-                        .heading {
-                            position: relative;
-                            float: left;
-                            margin-left: 1rem;
-                            color: @textColor;
-                        }
-                        .detail {
-                            position: relative;
-                            float: right;
-                            margin-right: 15rem;
-                        }
+                        float: left;
+                        color: @textColor;
+                    }
+                    .detail {
+                        position: relative;
+                        float: right;
+                        margin-right: 10rem;
                     }
                 }
-                .eventCard {
-                    position: absolute;
-                    top: 15rem;
-                    height: 15rem;
-                    background-color: #fff;
+            }
+            .eventCard {
+                position: absolute;
+                height: 15rem;
+                top: 14rem;
+                background-color: #fff;
+                width: 100%;
+                overflow-y: scroll;
+                .headingText {
+                    .mainContainer .mainDiv .userInfo .infoCard .headingText();
+                }
+                .eventData {
+                    position: relative;
+                    height: 4rem;
+                    line-height: 4rem;
                     width: 100%;
-                    overflow-y: scroll;
-                    .headingText {
-                        .mainContainer .mainDiv .userInfo .infoCard .headingText();
-                    }
-                    .eventData {
+                    .dot {
                         position: relative;
-                        height: 3rem;
-                        line-height: 3rem;
-                        top: 3rem;
-                        width: 100%;
-                        margin-bottom: 1rem;
-                        .dot {
-                            position: absolute;
-                            height: 1rem;
-                            width: 1rem;
-                            border: 0.3rem solid #F47357;
-                            border-radius: 1rem;
-                            top: 1rem;
-                            left: 1.2rem;
-                        }
-                        .time {
-                            position: absolute;
-                            height: 2rem;
-                            top: 0.5rem;
-                            line-height: 2rem;
-                            background-color: #F47357;
-                            border-radius: 0.6rem;
-                            color: #fff;
-                            padding-left: 0.5rem;
-                            padding-right: 0.5rem;
-                            margin-left: 3rem;
-                        }
-                        .eventText {
-                            position: absolute;
-                            top: 0.5rem;
-                            height: 2rem;
-                            line-height: 2rem;
-                            left: 7rem;
-                            font-size: 1.2rem;
-                            font-weight: 400;
-                            color: @disabledTextColor;
-                    }
-                    .tableNumber{
-                        position: absolute;
-                        right: 2rem;
+                        float: left;
+                        height: 1rem;
+                        width: 1rem;
+                        border: 0.3rem solid #F47357;
+                        border-radius: 1rem;
                         top: 0.5rem;
+                        margin-left: 1rem;
+                    }
+                    .time {
+                        position: relative;
+                        float: left;
                         height: 2rem;
                         line-height: 2rem;
-                        color: @disabledTextColor;
+                        background-color: #F47357;
+                        border-radius: 0.6rem;
+                        color: #fff;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        margin-left: 1rem;
+                        font-size: 1rem;
+                    }
+                    .eventText {
+                        position: relative;
+                        line-height: 2rem;
+                        float: left;
+                        margin-left: 1rem;
                         font-size: 1.2rem;
                         font-weight: 400;
+                        color: @disabledTextColor;
+                    }
+                    .tableNumber {
+                        position: relative;
+                        float: right;
+                        height: 3rem;
+                        line-height: 2rem;
+                        color: #CDD4DE;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        margin-right: 2rem;
                     }
                 }
             }
             .dinningCard {
+                position: relative;
                 position: absolute;
-                top: 30rem;
+                top: 29rem;
                 bottom: 0;
                 width: 100%;
-                overflow-y:scroll; 
+                overflow-y: auto;
                 .headingText {
                     .mainContainer .mainDiv .userInfo .infoCard .headingText();
                 }
-                .dinningData{
+                .dinningData {
                     .mainContainer .mainDiv .userInfo .eventCard .eventData();
-                    .blue{
-                    border-color: @divColor;
-                    background-color: @divColor;
-                }
-                .grey{
-                    border-color: grey;
-                    background-color: grey;
-                }
-                .green{
-                    border-color: green;
-                    background-color:green;
-                }
+                    .blueDot {
+                        border: 0.3rem solid @divColor;
+                    }
+                    .greyDot {
+                        border: 0.3rem solid grey;
+                    }
+                    .greenDot {
+                        border: 0.3rem solid @green;
+                    }
+                    .blueTime {
+                        background-color: @divColor;
+                    }
+                    .greyTime {
+                        background-color: grey;
+                    }
+                    .greenTime {
+                        background-color: @green;
+                    }
                 }
             }
         }
-    } //     .sideBar {
-    //         position: absolute;
-    //         background-color: #30333A;
-    //         height: 100%;
-    //         width: 4%;
-    //         .activeIcon {
-    //             position: absolute;
-    //             background-color: @divColor;
-    //             height: 6rem;
-    //             width: 100%;
-    //         }
-    //         .sideBarIcon {
-    //             height: 3rem;
-    //             margin: 1rem;
-    //         }
-    //         .inactiveIcon {
-    //             position: relative;
-    //             top: 20rem;
-    //         }
-    //         .lastIcon {
-    //             position: absolute;
-    //             bottom: 3rem;
-    //         }
-    //     }
-    //     .mainDiv {
-    //         position: absolute;
-    //         top: 0;
-    //         bottom: 0;
-    //         width: 96%;
-    //         left: 4%;
-    //         .topBar {
-    //             position: absolute;
-    //             top: 0;
-    //             height: 6rem;
-    //             width: 100%;
-    //             background-color: #FFFFFF;
-    //             border-bottom: 0.2rem solid #F5F5F6;
-    //             .genericName {
-    //                 position: absolute;
-    //                 margin: 2rem;
-    //                 margin-left: 4rem;
-    //                 height: 2rem;
-    //                 line-height: 2rem;
-    //                 font-weight: 300;
-    //                 font-size: @fontSize;
-    //                 color: @divColor;
-    //             }
-    //             .adminName {
-    //                 position: absolute;
-    //                 right: 20rem;
-    //                 margin-top: 2rem;
-    //                 height: 2rem;
-    //                 line-height: 2rem;
-    //                 font-weight: 300;
-    //                 font-size: @fontSize;
-    //                 color: @textColor;
-    //             }
-    //             .addDiv {
-    //                 position: absolute;
-    //                 height: 6rem;
-    //                 right: 0;
-    //                 background-color: @divColor;
-    //                 .addBtn {
-    //                     margin: 1rem;
-    //                     height: 4rem;
-    //                 }
-    //             }
-    //         }
-    //         .filterContainer {
-    //             .mainContainer.mainDiv.topBar();
-    //             top: 6rem;
-    //             .filterText {
-    //                 position: absolute;
-    //                 margin: 1rem;
-    //                 margin-left: 2rem;
-    //                 height: 4rem;
-    //                 line-height: 4rem;
-    //                 font-weight: 300;
-    //                 font-size: @fontSize;
-    //             }
-    //             .inactiveFilterText {
-    //                 .filterText();
-    //                 left: 13rem;
-    //                 margin-left: 3rem;
-    //                 color: @disabledTextColor;
-    //             }
-    //             .secondinactiveFilterText {
-    //                 .inactiveFilterText();
-    //                 margin-left: 15rem;
-    //                 color: @disabledTextColor;
-    //             }
-    //         }
-    //         .userList {
-    //             position: absolute;
-    //             top: 12rem;
-    //             bottom: 0;
-    //             background-color: #fff;
-    //             width: 33rem;
-    //             overflow: auto;
-    //             .searchBar {
-    //                 position: absolute;
-    //                 height: 4rem;
-    //                 left: 2rem;
-    //                 right: 2rem;
-    //                 margin-top: 2rem;
-    //                 margin-bottom: 1rem;
-    //                 border: 0.1rem solid #C1C1C1;
-    //                 border-radius: 2rem;
-    //                 .searchText {
-    //                     position: absolute;
-    //                     left: 0;
-    //                     height: 4rem;
-    //                     line-height: 4rem;
-    //                     color: #3F7AB5;
-    //                     font-size: 1.4rem;
-    //                     font-weight: 300;
-    //                     padding-left: 1rem;
-    //                 }
-    //                 .phoneText {
-    //                     position: absolute;
-    //                     height: 4rem;
-    //                     line-height: 4rem;
-    //                     color: @textColor;
-    //                     font-size: 1.4rem;
-    //                     font-weight: 300;
-    //                     padding-right: 1rem;
-    //                     right: 0;
-    //                 }
-    //             }
-    //             .users {
-    //                 position: relative;
-    //                 top: 6rem;
-    //                 margin-left: 1rem;
-    //                 margin-right: 1rem;
-    //                 height: 4rem;
-    //                 line-height: 4rem;
-    //                 .name {
-    //                     position: relative;
-    //                     color: #000;
-    //                     font-size: 1.4rem;
-    //                     font-weight: 300;
-    //                     padding-left: 1rem;
-    //                     float: left;
-    //                 }
-    //                 .number {
-    //                     position: relative;
-    //                     color: @disabledTextColor;
-    //                     font-size: 1.4rem;
-    //                     font-weight: 300;
-    //                     padding-right: 1rem;
-    //                     float: right;
-    //                 }
-    //             }
-    //         }
-    //         .alphabet {
-    //             .userList();
-    //             width: 5rem;
-    //             left: 33rem;
-    //             background-color: #EEEFF0;
-    //             .alpha {
-    //                 position: relative;
-    //                 text-align: center;
-    //                 height: 2rem;
-    //                 padding-top: 1rem;
-    //                 color: @textColor;
-    //                 font-weight: 300;
-    //                 text-transform: uppercase;
-    //             }
-    //         }
-    //         .userDetails {
-    //             position: absolute;
-    //             top: 12rem;
-    //             bottom: 0;
-    //             left: 38rem;
-    //             right: 33rem;
-    //             border: 0.2rem solid #F5F5F6;
-    //             border-top: none;
-    //             border-bottom: none;
-    //             background-color: #fff;
-    //             .userCard {
-    //                 position: absolute;
-    //                 height: 24rem;
-    //                 width: 100%;
-    //             }
-    //             .preferenceCard {
-    //                 position: relative;
-    //                 top: 24rem;
-    //                 height: 6rem;
-    //                 width: 100%;
-    //                 border-top: 0.2rem solid #F5F5F6;
-    //                 .cardHeading {
-    //                     position: absolute;
-    //                     margin: 2rem;
-    //                     color: @disabledTextColor;
-    //                     font-size: 1.2rem;
-    //                     font-weight: 300;
-    //                     line-height: 2rem;
-    //                 }
-    //                 .tagContainer {
-    //                     position: absolute;
-    //                     top: 1rem;
-    //                     height: 4rem;
-    //                     left: 15rem;
-    //                     right: 5rem;
-    //                     overflow-y: scroll;
-    //                     .tags {
-    //                         position: relative;
-    //                         height: 2rem;
-    //                         line-height: 2rem;
-    //                         float: left;
-    //                         color: @textColor;
-    //                         border: 0.2rem solid #f5f6f6;
-    //                         border-radius: 2rem;
-    //                         padding-left: 1rem;
-    //                         padding-right: 1rem;
-    //                         margin-top: 1rem;
-    //                         margin-left: 1rem;
-    //                     }
-    //                 }
-    //                 .addItem {
-    //                     position: absolute;
-    //                     top: 2rem;
-    //                     height: 2rem;
-    //                     right: 1rem;
-    //                     width: 3rem;
-    //                     border: 0.1rem solid @divColor;
-    //                     border-radius: 2rem;
-    //                     .addIcon {
-    //                         position: absolute;
-    //                         height: 1.8rem;
-    //                         margin-left: 0.5rem;
-    //                     }
-    //                 }
-    //             }
-    //             .userTags {
-    //                 .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags();
-    //                 color: #51BC51;
-    //             }
-    //             .eventHistory {
-    //                 position: relative;
-    //                 top: 24rem;
-    //                 height: 9rem;
-    //                 width: 100%;
-    //                 border-top: 0.2rem solid #F5F5F6;
-    //                 .cardHeading {
-    //                     position: absolute;
-    //                     margin: 2rem;
-    //                     color: @disabledTextColor;
-    //                     font-size: 1.2rem;
-    //                     font-weight: 300;
-    //                     line-height: 4rem;
-    //                 }
-    //                 .eventName {
-    //                     position: absolute;
-    //                     height: 9rem;
-    //                     left: 15rem;
-    //                     overflow: auto;
-    //                     right: 24rem;
-    //                     .eventTag {
-    //                         position: relative;
-    //                         height: 2rem;
-    //                         line-height: 2rem;
-    //                         color: @textColor;
-    //                         border: 0.2rem solid #f5f6f6;
-    //                         border-radius: 2rem;
-    //                         padding-left: 1rem;
-    //                         padding-right: 1rem;
-    //                         margin-top: 1rem;
-    //                         margin-left: 1rem;
-    //                         display: inline-block;
-    //                     }
-    //                 }
-    //                 .visitCounter {
-    //                     position: absolute;
-    //                     height: 9rem;
-    //                     left: 27rem;
-    //                     width: 15rem;
-    //                     .headingText {
-    //                         position: relative;
-    //                         margin-top: 1rem;
-    //                         height: 2rem;
-    //                         color: #CCD3E2;
-    //                         font-size: 1.2rem;
-    //                     }
-    //                     .tag {
-    //                         position: relative;
-    //                         line-height: 2rem;
-    //                         color: @textColor;
-    //                         border: 0.2rem solid #f5f6f6;
-    //                         border-radius: 2rem;
-    //                         padding-left: 1rem;
-    //                         padding-right: 1rem;
-    //                         margin-left: 0.5rem;
-    //                         display: inline-block;
-    //                     }
-    //                 }
-    //                 .addItem {
-    //                     position: absolute;
-    //                     top: 2rem;
-    //                     height: 2rem;
-    //                     right: 1rem;
-    //                     width: 3rem;
-    //                     border: 0.1rem solid @divColor;
-    //                     border-radius: 2rem;
-    //                     .addIcon {
-    //                         position: absolute;
-    //                         height: 1.8rem;
-    //                         margin-left: 0.5rem;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         .userInfo {
-    //             position: absolute;
-    //             top: 12rem;
-    //             width: 33rem;
-    //             right: 0;
-    //             bottom: 0;
-    //             .infoCard {
-    //                 position: absolute;
-    //                 top: 0;
-    //                 height: 15rem;
-    //                 width: 100%;
-    //                 .headingText {
-    //                     position: absolute;
-    //                     margin: 1rem;
-    //                     color: black;
-    //                     text-transform: uppercase;
-    //                     font-size: 1.2rem;
-    //                     line-height: 1rem;
-    //                     font-weight: 500;
-    //                 }
-    //                 .aboutText {
-    //                     position: absolute;
-    //                     height: 4rem;
-    //                     line-height: 2rem;
-    //                     margin-top: 3rem;
-    //                     font-size: 1.2rem;
-    //                     left: 1rem;
-    //                     right: 5rem;
-    //                     word-break: break-all;
-    //                 }
-    //                 .contactDetails {
-    //                     position: relative;
-    //                     top: 8rem;
-    //                     height: 4rem;
-    //                     line-height: 2rem;
-    //                     font-weight: 400;
-    //                     .heading {
-    //                         position: relative;
-    //                         float: left;
-    //                         margin-left: 1rem;
-    //                         color: @textColor;
-    //                     }
-    //                     .detail {
-    //                         position: relative;
-    //                         float: right;
-    //                         margin-right: 15rem;
-    //                     }
-    //                 }
-    //             }
-    //             .eventCard {
-    //                 position: absolute;
-    //                 top: 15rem;
-    //                 height: 15rem;
-    //                 background-color: #fff;
-    //                 width: 100%;
-    //                 overflow-y: scroll;
-    //                 .headingText {
-    //                     .mainContainer .mainDiv .userInfo .infoCard .headingText();
-    //                 }
-    //                 .eventData {
-    //                     position: relative;
-    //                     height: 3rem;
-    //                     line-height: 3rem;
-    //                     top: 3rem;
-    //                     width: 100%;
-    //                     margin-bottom: 1rem;
-    //                     .dot {
-    //                         position: absolute;
-    //                         height: 1rem;
-    //                         width: 1rem;
-    //                         border: 0.3rem solid #F47357;
-    //                         border-radius: 1rem;
-    //                         top: 1rem;
-    //                         left: 1.2rem;
-    //                     }
-    //                     .time {
-    //                         position: absolute;
-    //                         height: 2rem;
-    //                         top: 0.5rem;
-    //                         line-height: 2rem;
-    //                         background-color: #F47357;
-    //                         border-radius: 0.6rem;
-    //                         color: #fff;
-    //                         padding-left: 0.5rem;
-    //                         padding-right: 0.5rem;
-    //                         margin-left: 3rem;
-    //                     }
-    //                     .eventText {
-    //                         position: absolute;
-    //                         top: 0.5rem;
-    //                         height: 2rem;
-    //                         line-height: 2rem;
-    //                         left: 7rem;
-    //                         font-size: 1.2rem;
-    //                         font-weight: 400;
-    //                         color: @disabledTextColor;
-    //                 }
-    //                 .tableNumber{
-    //                     position: absolute;
-    //                     right: 2rem;
-    //                     top: 0.5rem;
-    //                     height: 2rem;
-    //                     line-height: 2rem;
-    //                     color: @disabledTextColor;
-    //                     font-size: 1.2rem;
-    //                     font-weight: 400;
-    //                 }
-    //             }
-    //         }
-    //         .dinningCard {
-    //             position: absolute;
-    //             top: 30rem;
-    //             bottom: 0;
-    //             width: 100%;
-    //             overflow-y:scroll; 
-    //             .headingText {
-    //                 .mainContainer .mainDiv .userInfo .infoCard .headingText();
-    //             }
-    //             .dinningData{
-    //                 .mainContainer .mainDiv .userInfo .eventCard .eventData();
-    //                 .blue{
-    //                 border-color: @divColor;
-    //                 background-color: @divColor;
-    //             }
-    //             .grey{
-    //                 border-color: grey;
-    //                 background-color: grey;
-    //             }
-    //             .green{
-    //                 border-color: green;
-    //                 background-color:green;
-    //             }
-    //             }
-    //         }
-    //     }
-    // }
+    }
 }
