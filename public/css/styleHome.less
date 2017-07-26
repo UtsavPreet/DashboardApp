@@ -40,17 +40,20 @@ html {
         width: 6rem;
         .activeIcon {
             position: absolute;
+            padding-top: 1rem;
             background-color: @divColor;
             height: 6rem;
             width: 100%;
         }
         .sideBarIcon {
-            height: 3rem;
-            margin: 1rem;
+            height: 4rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
         .inactiveIcon {
             position: relative;
-            top: 20rem;
+            top: 15rem;
+            height: 6rem;
         }
         .lastIcon {
             position: absolute;
@@ -121,8 +124,8 @@ html {
                 margin-left: 2rem;
                 height: 4rem;
                 line-height: 4rem;
-                font-weight: 300;
-                font-size: 1.8rem;
+                font-weight: 400;
+                font-size: 1.6rem;
             }
             .inactiveFilterText {
                 .filterText();
@@ -153,13 +156,32 @@ html {
                 border-radius: 2rem;
                 .searchText {
                     position: absolute;
-                    left: 0;
                     height: 4rem;
-                    line-height: 4rem;
-                    color: #3F7AB5;
+                    background: transparent;
+                    border: none;
+                    resize: none;
+                    overflow: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 1rem;
+                }
+                 ::-webkit-input-placeholder {
+                    /* Chrome/Opera/Safari */
+                    color: @textColor;
                     font-size: 1.4rem;
                     font-weight: 300;
-                    padding-left: 1rem;
+                }
+                 ::-moz-placeholder {
+                    /* Firefox 19+ */
+                    color: @textColor;
+                }
+                 :-ms-input-placeholder {
+                    /* IE 10+ */
+                    color: @textColor;
+                }
+                 :-moz-placeholder {
+                    /* Firefox 18- */
+                    color: @textColor;
                 }
                 .phoneText {
                     position: absolute;
@@ -179,8 +201,8 @@ html {
                 width: 100%;
                 .users {
                     position: relative;
-                    margin-left: 1rem;
-                    margin-right: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                     height: 4rem;
                     line-height: 4rem;
                     color: #000;
@@ -194,8 +216,8 @@ html {
                     .number {
                         position: relative;
                         color: @disabledTextColor;
-                        font-size: 1.6rem;
-                        font-weight: 400;
+                        font-size: 1.4rem;
+                        font-weight: 300;
                         padding-right: 1rem;
                         float: right;
                     }
@@ -203,18 +225,22 @@ html {
             }
         }
         .selected {
-            .mainContainer .mainDiv .userDiv .userContainer .users();
+            position: absolute;
+            left: 0;
+            right: 0;
             background-color: #458ACF;
-            color: #F5F5F6;
+            color: #F5F5F6 !important;
         }
         .alphabet {
             .userDiv();
-            padding-top: 1rem;
+            padding-top: 0.8rem;
             width: 5rem;
             left: 33rem;
             background-color: #EEEFF0;
             .alpha {
                 position: relative;
+                height: 1.9rem;
+                line-height: 1.9;
                 text-align: center;
                 font-size: 1.2rem;
                 padding-top: 0.5rem;
@@ -237,7 +263,7 @@ html {
             top: 12rem;
             bottom: 0;
             left: 38rem;
-            right: 33rem;
+            right: 32rem;
             border: 0.2rem solid #F5F5F6;
             border-top: none;
             border-bottom: none;
@@ -246,6 +272,87 @@ html {
                 position: relative;
                 height: 22rem;
                 width: 100%;
+                .contactName {
+                    position: relative;
+                    float: left;
+                    margin-left: 1rem;
+                    font-size: 1.6rem;
+                    color: @textColor;
+                    font-weight: 400;
+                    height: 4rem;
+                    line-height: 4rem;
+                }
+                .filledTag {
+                    position: relative;
+                    margin-top: 1rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    float: left;
+                    color: #fff;
+                    background-color: #BDC4D5;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    border-radius: 0.5rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    margin-left: 1rem;
+                }
+                .review {
+                    position: relative;
+                    float: right;
+                    margin-top: 1rem;
+                    height: 2rem;
+                    margin-right: 4rem;
+                    line-height: 2rem;
+                    color: #CDD4DE;
+                    font-weight: 400;
+                    .image {
+                        position: relative;
+                        float: right;
+                        height: 2rem;
+                    }
+                }
+                .statContainer {
+                    position: relative;
+                    top: 2rem;
+                    .image {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 15rem;
+                    }
+                }
+                .statSummary {
+                    position: absolute;
+                    bottom: 0;
+                    height: 6rem;
+                    line-height: 6rem;
+                    width: 100%;
+                    .blueDot {
+                        position: relative;
+                        top: 1.2rem;
+                        float: left;
+                        margin-left: 12rem;
+                        border: 0.3rem solid @divColor;
+                        border-radius: 2rem;
+                    }
+                    .greenDot {
+                        .blueDot();
+                        margin-left: 2rem;
+                        border: 0.3rem solid @green;
+                    }
+                    .summaryText {
+                        position: relative;
+                        height: 3rem;
+                        line-height: 3rem;
+                        float: left;
+                        margin-left: 1rem;
+                        color: @disabledTextColor;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
             }
             .preferenceCard {
                 position: relative;
@@ -255,7 +362,7 @@ html {
                 .cardHeading {
                     position: absolute;
                     height: 6rem;
-                    left: 2rem;
+                    left: 1rem;
                     color: @disabledTextColor;
                     font-size: 1.4rem;
                     font-weight: 300;
@@ -270,8 +377,8 @@ html {
                     .tags {
                         position: relative;
                         margin-top: 2rem;
-                        height: 2rem;
-                        line-height: 2rem;
+                        height: 2.4rem;
+                        line-height: 2.4rem;
                         float: left;
                         color: @textColor;
                         font-size: 1rem;
@@ -309,7 +416,7 @@ html {
                 border-top: 0.2rem solid #F5F5F6;
                 .cardHeading {
                     position: absolute;
-                    margin: 2rem;
+                    margin: 1rem;
                     color: @disabledTextColor;
                     font-size: 1.4rem;
                     font-weight: 300;
@@ -326,10 +433,11 @@ html {
                         height: 9rem;
                         top: 3rem;
                         left: 0;
-                        right: 17rem;
+                        right: 19rem;
                         .eventTag {
                             position: relative;
-                            line-height: 2rem;
+                            height: 2.4rem;
+                            line-height: 2.4rem;
                             float: left;
                             color: @textColor;
                             font-size: 1rem;
@@ -346,7 +454,7 @@ html {
                         height: 10rem;
                         top: 2rem;
                         line-height: 3rem;
-                        right: 1rem;
+                        right: 4rem;
                         .headingText {
                             position: relative;
                             color: #CCD3E2;
@@ -363,6 +471,9 @@ html {
                             padding-right: 1rem;
                             margin-left: 0.5rem;
                             display: inline-block;
+                            .add {
+                                height: 2rem;
+                            }
                         }
                     }
                 }
@@ -385,7 +496,7 @@ html {
         .userInfo {
             position: absolute;
             top: 12rem;
-            width: 33rem;
+            width: 32rem;
             right: 0;
             bottom: 0;
             .infoCard {
@@ -395,7 +506,8 @@ html {
                 .headingText {
                     position: relative;
                     margin-top: 0.5rem;
-                    left: 1rem;
+                    margin-left: 1rem;
+                    max-width: 30rem;
                     color: black;
                     text-transform: uppercase;
                     height: 3rem;
@@ -405,14 +517,15 @@ html {
                 }
                 .aboutText {
                     position: relative;
-                    left: 1rem;
-                    height: 4rem;
+                    margin-left: 1rem;
+                    max-width: 25rem;
+                    height: 5rem;
                     font-size: 1.2rem;
                 }
                 .contactDetails {
                     position: relative;
                     margin-left: 1rem;
-                    height: 4rem;
+                    height: 3rem;
                     line-height: 0rem;
                     font-size: 1.4rem;
                     font-weight: 300;
@@ -423,8 +536,8 @@ html {
                     }
                     .detail {
                         position: relative;
-                        float: right;
-                        margin-right: 10rem;
+                        float: left;
+                        margin-left: 7rem;
                     }
                 }
             }

@@ -29,17 +29,20 @@ html {
 }
 .mainContainer .sideBar .activeIcon {
   position: absolute;
+  padding-top: 1rem;
   background-color: #5387DE;
   height: 6rem;
   width: 100%;
 }
 .mainContainer .sideBar .sideBarIcon {
-  height: 3rem;
-  margin: 1rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mainContainer .sideBar .inactiveIcon {
   position: relative;
-  top: 20rem;
+  top: 15rem;
+  height: 6rem;
 }
 .mainContainer .sideBar .lastIcon {
   position: absolute;
@@ -157,8 +160,8 @@ html {
   margin-left: 2rem;
   height: 4rem;
   line-height: 4rem;
-  font-weight: 300;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 .mainContainer .mainDiv .filterContainer .inactiveFilterText {
   position: absolute;
@@ -166,8 +169,8 @@ html {
   margin-left: 2rem;
   height: 4rem;
   line-height: 4rem;
-  font-weight: 300;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
   left: 13rem;
   margin-left: 3rem;
   color: #CDD4DE;
@@ -178,8 +181,8 @@ html {
   margin-left: 2rem;
   height: 4rem;
   line-height: 4rem;
-  font-weight: 300;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
   left: 13rem;
   margin-left: 3rem;
   margin-left: 15rem;
@@ -204,13 +207,32 @@ html {
 }
 .mainContainer .mainDiv .userDiv .searchBar .searchText {
   position: absolute;
-  left: 0;
   height: 4rem;
-  line-height: 4rem;
-  color: #3F7AB5;
+  background: transparent;
+  border: none;
+  resize: none;
+  overflow: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+}
+.mainContainer .mainDiv .userDiv .searchBar ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #5C91D2;
   font-size: 1.4rem;
   font-weight: 300;
-  padding-left: 1rem;
+}
+.mainContainer .mainDiv .userDiv .searchBar ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #5C91D2;
+}
+.mainContainer .mainDiv .userDiv .searchBar :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #5C91D2;
+}
+.mainContainer .mainDiv .userDiv .searchBar :-moz-placeholder {
+  /* Firefox 18- */
+  color: #5C91D2;
 }
 .mainContainer .mainDiv .userDiv .searchBar .phoneText {
   position: absolute;
@@ -230,8 +252,8 @@ html {
 }
 .mainContainer .mainDiv .userDiv .userContainer .users {
   position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   height: 4rem;
   line-height: 4rem;
   color: #000;
@@ -246,35 +268,17 @@ html {
 .mainContainer .mainDiv .userDiv .userContainer .users .number {
   position: relative;
   color: #CDD4DE;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 300;
   padding-right: 1rem;
   float: right;
 }
 .mainContainer .mainDiv .selected {
-  position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 4rem;
-  line-height: 4rem;
-  color: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
   background-color: #458ACF;
-  color: #F5F5F6;
-}
-.mainContainer .mainDiv .selected .name {
-  position: relative;
-  font-size: 1.4rem;
-  font-weight: 300;
-  padding-left: 1rem;
-  float: left;
-}
-.mainContainer .mainDiv .selected .number {
-  position: relative;
-  color: #CDD4DE;
-  font-size: 1.6rem;
-  font-weight: 400;
-  padding-right: 1rem;
-  float: right;
+  color: #F5F5F6 !important;
 }
 .mainContainer .mainDiv .alphabet {
   position: absolute;
@@ -282,7 +286,7 @@ html {
   bottom: 0;
   background-color: #fff;
   width: 33rem;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   width: 5rem;
   left: 33rem;
   background-color: #EEEFF0;
@@ -299,13 +303,32 @@ html {
 }
 .mainContainer .mainDiv .alphabet .searchBar .searchText {
   position: absolute;
-  left: 0;
   height: 4rem;
-  line-height: 4rem;
-  color: #3F7AB5;
+  background: transparent;
+  border: none;
+  resize: none;
+  overflow: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+}
+.mainContainer .mainDiv .alphabet .searchBar ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #5C91D2;
   font-size: 1.4rem;
   font-weight: 300;
-  padding-left: 1rem;
+}
+.mainContainer .mainDiv .alphabet .searchBar ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #5C91D2;
+}
+.mainContainer .mainDiv .alphabet .searchBar :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #5C91D2;
+}
+.mainContainer .mainDiv .alphabet .searchBar :-moz-placeholder {
+  /* Firefox 18- */
+  color: #5C91D2;
 }
 .mainContainer .mainDiv .alphabet .searchBar .phoneText {
   position: absolute;
@@ -325,8 +348,8 @@ html {
 }
 .mainContainer .mainDiv .alphabet .userContainer .users {
   position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   height: 4rem;
   line-height: 4rem;
   color: #000;
@@ -341,13 +364,15 @@ html {
 .mainContainer .mainDiv .alphabet .userContainer .users .number {
   position: relative;
   color: #CDD4DE;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 300;
   padding-right: 1rem;
   float: right;
 }
 .mainContainer .mainDiv .alphabet .alpha {
   position: relative;
+  height: 1.9rem;
+  line-height: 1.9;
   text-align: center;
   font-size: 1.2rem;
   padding-top: 0.5rem;
@@ -357,6 +382,8 @@ html {
 }
 .mainContainer .mainDiv .selectedAlpha {
   position: relative;
+  height: 1.9rem;
+  line-height: 1.9;
   text-align: center;
   font-size: 1.2rem;
   padding-top: 0.5rem;
@@ -375,7 +402,7 @@ html {
   top: 12rem;
   bottom: 0;
   left: 38rem;
-  right: 33rem;
+  right: 32rem;
   border: 0.2rem solid #F5F5F6;
   border-top: none;
   border-bottom: none;
@@ -386,6 +413,92 @@ html {
   height: 22rem;
   width: 100%;
 }
+.mainContainer .mainDiv .userDetails .userCard .contactName {
+  position: relative;
+  float: left;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  color: #5C91D2;
+  font-weight: 400;
+  height: 4rem;
+  line-height: 4rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .filledTag {
+  position: relative;
+  margin-top: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  float: left;
+  color: #fff;
+  background-color: #BDC4D5;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-left: 1rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .review {
+  position: relative;
+  float: right;
+  margin-top: 1rem;
+  height: 2rem;
+  margin-right: 4rem;
+  line-height: 2rem;
+  color: #CDD4DE;
+  font-weight: 400;
+}
+.mainContainer .mainDiv .userDetails .userCard .review .image {
+  position: relative;
+  float: right;
+  height: 2rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .statContainer {
+  position: relative;
+  top: 2rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .statContainer .image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 15rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .statSummary {
+  position: absolute;
+  bottom: 0;
+  height: 6rem;
+  line-height: 6rem;
+  width: 100%;
+}
+.mainContainer .mainDiv .userDetails .userCard .statSummary .blueDot {
+  position: relative;
+  top: 1.2rem;
+  float: left;
+  margin-left: 12rem;
+  border: 0.3rem solid #5387DE;
+  border-radius: 2rem;
+}
+.mainContainer .mainDiv .userDetails .userCard .statSummary .greenDot {
+  position: relative;
+  top: 1.2rem;
+  float: left;
+  margin-left: 12rem;
+  border: 0.3rem solid #5387DE;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  border: 0.3rem solid #52BB52;
+}
+.mainContainer .mainDiv .userDetails .userCard .statSummary .summaryText {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
+  float: left;
+  margin-left: 1rem;
+  color: #CDD4DE;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .mainContainer .mainDiv .userDetails .preferenceCard {
   position: relative;
   height: 6rem;
@@ -395,7 +508,7 @@ html {
 .mainContainer .mainDiv .userDetails .preferenceCard .cardHeading {
   position: absolute;
   height: 6rem;
-  left: 2rem;
+  left: 1rem;
   color: #CDD4DE;
   font-size: 1.4rem;
   font-weight: 300;
@@ -411,8 +524,8 @@ html {
 .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags {
   position: relative;
   margin-top: 2rem;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;
@@ -440,8 +553,8 @@ html {
 .mainContainer .mainDiv .userDetails .userTags {
   position: relative;
   margin-top: 2rem;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;
@@ -461,7 +574,7 @@ html {
 }
 .mainContainer .mainDiv .userDetails .eventHistory .cardHeading {
   position: absolute;
-  margin: 2rem;
+  margin: 1rem;
   color: #CDD4DE;
   font-size: 1.4rem;
   font-weight: 300;
@@ -479,11 +592,12 @@ html {
   height: 9rem;
   top: 3rem;
   left: 0;
-  right: 17rem;
+  right: 19rem;
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .eventName .eventTag {
   position: relative;
-  line-height: 2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;
@@ -499,7 +613,7 @@ html {
   height: 10rem;
   top: 2rem;
   line-height: 3rem;
-  right: 1rem;
+  right: 4rem;
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .visitCounter .headingText {
   position: relative;
@@ -518,6 +632,9 @@ html {
   margin-left: 0.5rem;
   display: inline-block;
 }
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .visitCounter .tag .add {
+  height: 2rem;
+}
 .mainContainer .mainDiv .userDetails .eventHistory .addItem {
   position: absolute;
   top: 3rem;
@@ -535,7 +652,7 @@ html {
 .mainContainer .mainDiv .userInfo {
   position: absolute;
   top: 12rem;
-  width: 33rem;
+  width: 32rem;
   right: 0;
   bottom: 0;
 }
@@ -547,7 +664,8 @@ html {
 .mainContainer .mainDiv .userInfo .infoCard .headingText {
   position: relative;
   margin-top: 0.5rem;
-  left: 1rem;
+  margin-left: 1rem;
+  max-width: 30rem;
   color: black;
   text-transform: uppercase;
   height: 3rem;
@@ -557,14 +675,15 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard .aboutText {
   position: relative;
-  left: 1rem;
-  height: 4rem;
+  margin-left: 1rem;
+  max-width: 25rem;
+  height: 5rem;
   font-size: 1.2rem;
 }
 .mainContainer .mainDiv .userInfo .infoCard .contactDetails {
   position: relative;
   margin-left: 1rem;
-  height: 4rem;
+  height: 3rem;
   line-height: 0rem;
   font-size: 1.4rem;
   font-weight: 300;
@@ -576,8 +695,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard .contactDetails .detail {
   position: relative;
-  float: right;
-  margin-right: 10rem;
+  float: left;
+  margin-left: 7rem;
 }
 .mainContainer .mainDiv .userInfo .eventCard {
   position: absolute;
@@ -590,7 +709,8 @@ html {
 .mainContainer .mainDiv .userInfo .eventCard .headingText {
   position: relative;
   margin-top: 0.5rem;
-  left: 1rem;
+  margin-left: 1rem;
+  max-width: 30rem;
   color: black;
   text-transform: uppercase;
   height: 3rem;
@@ -657,7 +777,8 @@ html {
 .mainContainer .mainDiv .userInfo .dinningCard .headingText {
   position: relative;
   margin-top: 0.5rem;
-  left: 1rem;
+  margin-left: 1rem;
+  max-width: 30rem;
   color: black;
   text-transform: uppercase;
   height: 3rem;
