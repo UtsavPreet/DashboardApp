@@ -6,6 +6,9 @@
 *:focus {
   outline: none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 html {
   font-size: 10px;
 }
