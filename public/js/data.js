@@ -206,5 +206,70 @@ var data = {
             }
         ]
     }],
+    infoCard:[{
+        cardHeading:"User Info",
+        about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        detail:[{
+            heading: "Mail",
+            text:"felish.osrio@gmail.com",
+        },
+        {
+            heading: "Phone",
+            text:"+123-321-123-321",
+        }
+        ]
+    }],
+
+    eventCard:[{
+        cardHeading:"Upcoming Events",
+        eventData:[
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            }
+        ]
+    }],
+
+    dinningCard:[{
+        cardHeading:"Dinning History",
+        dinningData:[
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+            {
+                time:"17:24",
+                eventDate:"Saturday, May 13",
+                tableNumber:"Table 3"
+            },
+        ]
+    }]
 
 }
