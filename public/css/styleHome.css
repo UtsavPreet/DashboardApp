@@ -40,11 +40,10 @@ html {
 .mainContainer .sideBar .sideBarIcon {
   height: 4rem;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 .mainContainer .sideBar .inactiveIcon {
   position: relative;
-  top: 14rem;
+  top: 13rem;
   height: 6rem;
 }
 .mainContainer .sideBar .lastIcon {
@@ -78,7 +77,7 @@ html {
 }
 .mainContainer .mainDiv .topBar .adminName {
   position: absolute;
-  right: 18rem;
+  right: 13rem;
   top: 2rem;
   height: 2rem;
   line-height: 2rem;
@@ -90,7 +89,7 @@ html {
   position: absolute;
   top: 1rem;
   height: 6rem;
-  right: 16rem;
+  right: 11rem;
 }
 .mainContainer .mainDiv .topBar .settingsGear .innerImg {
   position: absolute;
@@ -101,11 +100,12 @@ html {
   height: 6rem;
   line-height: 6rem;
   right: 0;
-  font-size: 5rem;
+  font-size: 4rem;
   background-color: #1B5EAC;
   color: #fff;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 300;
 }
 .mainContainer .mainDiv .filterContainer {
   position: absolute;
@@ -130,7 +130,7 @@ html {
 }
 .mainContainer .mainDiv .filterContainer .adminName {
   position: absolute;
-  right: 18rem;
+  right: 13rem;
   top: 2rem;
   height: 2rem;
   line-height: 2rem;
@@ -142,7 +142,7 @@ html {
   position: absolute;
   top: 1rem;
   height: 6rem;
-  right: 16rem;
+  right: 11rem;
 }
 .mainContainer .mainDiv .filterContainer .settingsGear .innerImg {
   position: absolute;
@@ -153,11 +153,12 @@ html {
   height: 6rem;
   line-height: 6rem;
   right: 0;
-  font-size: 5rem;
+  font-size: 4rem;
   background-color: #1B5EAC;
   color: #fff;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 300;
 }
 .mainContainer .mainDiv .filterContainer .filterText {
   position: relative;
@@ -408,12 +409,12 @@ html {
   font-size: 1.6rem;
   color: #5C91D2;
   font-weight: 400;
-  height: 4rem;
-  line-height: 4rem;
+  height: 5rem;
+  line-height: 5rem;
 }
 .mainContainer .mainDiv .userDetails .userCard .filledTag {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   height: 2rem;
   line-height: 2rem;
   float: left;
@@ -430,7 +431,7 @@ html {
 .mainContainer .mainDiv .userDetails .userCard .review {
   position: relative;
   float: right;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   height: 2rem;
   margin-right: 4rem;
   line-height: 2rem;
@@ -443,46 +444,47 @@ html {
   height: 2rem;
 }
 .mainContainer .mainDiv .userDetails .userCard .statContainer {
-  position: relative;
-  top: 2rem;
+  position: absolute;
+  top: 5rem;
+  height: 17rem;
+  width: 100%;
 }
 .mainContainer .mainDiv .userDetails .userCard .statContainer .image {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 15rem;
+  height: 12rem;
 }
 .mainContainer .mainDiv .userDetails .userCard .statSummary {
   position: absolute;
   bottom: 0;
   height: 6rem;
   line-height: 6rem;
-  width: 100%;
+  left: 12rem;
+  right: 12rem;
 }
 .mainContainer .mainDiv .userDetails .userCard .statSummary .blueDot {
   position: relative;
-  top: 1.2rem;
+  top: 2.7rem;
   float: left;
-  margin-left: 12rem;
   border: 0.3rem solid #5387DE;
   border-radius: 2rem;
 }
 .mainContainer .mainDiv .userDetails .userCard .statSummary .greenDot {
   position: relative;
-  top: 1.2rem;
+  top: 2.7rem;
   float: left;
-  margin-left: 12rem;
   border: 0.3rem solid #5387DE;
   border-radius: 2rem;
-  margin-left: 2rem;
   border: 0.3rem solid #52BB52;
 }
 .mainContainer .mainDiv .userDetails .userCard .statSummary .summaryText {
   position: relative;
-  height: 3rem;
-  line-height: 3rem;
+  height: 6rem;
+  line-height: 6rem;
   float: left;
   margin-left: 1rem;
+  margin-right: 1rem;
   color: #CDD4DE;
   font-size: 1.2rem;
   font-weight: 400;
@@ -525,11 +527,12 @@ html {
   margin-left: 0.5rem;
 }
 .mainContainer .mainDiv .userDetails .preferenceCard .addItem {
-  position: absolute;
-  top: 3rem;
+  position: relative;
+  float: right;
+  margin-top: 1.5rem;
   height: 2rem;
   line-height: 2rem;
-  right: 1rem;
+  margin-right: 1rem;
   font-size: 2rem;
   font-weight: 300;
   color: #5C91D2;
@@ -593,19 +596,23 @@ html {
   border-radius: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-right: 3rem;
 }
-.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitHeadingText {
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitHeading {
+  position: relative;
+  float: left;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitText {
   position: relative;
   float: left;
   height: 2.5rem;
   line-height: 2.5rem;
   color: #CCD3E2;
   font-size: 1.2rem;
-  margin-left: 4rem;
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitTag {
   position: relative;
-  float: right;
+  float: left;
   line-height: 2rem;
   color: #5C91D2;
   border: 0.2rem solid #f5f6f6;
@@ -616,7 +623,7 @@ html {
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .event .changeTag {
   position: relative;
-  float: right;
+  float: left;
   line-height: 2rem;
   color: #5C91D2;
   border: 0.2rem solid #f5f6f6;

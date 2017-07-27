@@ -52,11 +52,10 @@
             .sideBarIcon {
                 height: 4rem;
                 margin-left: 0.5rem;
-                margin-right: 0.5rem;
             }
             .inactiveIcon {
                 position: relative;
-                top: 14rem;
+                top: 13rem;
                 height: 6rem;
             }
             .lastIcon {
@@ -89,7 +88,7 @@
                 }
                 .adminName {
                     position: absolute;
-                    right: 18rem;
+                    right: 13rem;
                     top: 2rem;
                     height: 2rem;
                     line-height: 2rem;
@@ -101,7 +100,7 @@
                     position: absolute;
                     top: 1rem;
                     height: 6rem;
-                    right: 16rem;
+                    right: 11rem;
                     .innerImg {
                         position: absolute;
                         height: 4rem;
@@ -112,11 +111,12 @@
                     height: 6rem;
                     line-height: 6rem;
                     right: 0;
-                    font-size: 5rem;
-                    background-color: @topAdd;
+                    font-size: 4rem;
+                    background-color: #1B5EAC;
                     color: #fff;
-                    padding-left: 3rem;
-                    padding-right: 3rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    font-weight: 300;
                 }
             }
             .filterContainer {
@@ -281,12 +281,12 @@
                         font-size: 1.6rem;
                         color: @textColor;
                         font-weight: 400;
-                        height: 4rem;
-                        line-height: 4rem;
+                        height: 5rem;
+                        line-height: 5rem;
                     }
                     .filledTag {
                         position: relative;
-                        margin-top: 1rem;
+                        margin-top: 1.5rem;
                         height: 2rem;
                         line-height: 2rem;
                         float: left;
@@ -303,7 +303,7 @@
                     .review {
                         position: relative;
                         float: right;
-                        margin-top: 1rem;
+                        margin-top: 1.5rem;
                         height: 2rem;
                         margin-right: 4rem;
                         line-height: 2rem;
@@ -316,13 +316,15 @@
                         }
                     }
                     .statContainer {
-                        position: relative;
-                        top: 2rem;
+                        position: absolute;
+                        top: 5rem;
+                        height: 17rem;
+                        width: 100%;
                         .image {
                             position: absolute;
                             left: 50%;
                             transform: translateX(-50%);
-                            height: 15rem;
+                            height: 12rem;
                         }
                     }
                     .statSummary {
@@ -330,26 +332,26 @@
                         bottom: 0;
                         height: 6rem;
                         line-height: 6rem;
-                        width: 100%;
+                        left: 12rem;
+                        right: 12rem;
                         .blueDot {
                             position: relative;
-                            top: 1.2rem;
+                            top: 2.7rem;
                             float: left;
-                            margin-left: 12rem;
                             border: 0.3rem solid @divColor;
                             border-radius: 2rem;
                         }
                         .greenDot {
                             .blueDot();
-                            margin-left: 2rem;
                             border: 0.3rem solid @green;
                         }
                         .summaryText {
                             position: relative;
-                            height: 3rem;
-                            line-height: 3rem;
+                            height: 6rem;
+                            line-height: 6rem;
                             float: left;
                             margin-left: 1rem;
+                            margin-right: 1rem;
                             color: @disabledTextColor;
                             font-size: 1.2rem;
                             font-weight: 400;
@@ -393,11 +395,12 @@
                         }
                     }
                     .addItem {
-                        position: absolute;
-                        top: 3rem;
+                        position: relative;
+                        float: right;
+                        margin-top: 1.5rem;
                         height: 2rem;
                         line-height: 2rem;
-                        right: 1rem;
+                        margin-right: 1rem;
                         font-size: 2rem;
                         font-weight: 300;
                         color: @textColor;
@@ -448,19 +451,23 @@
                                 border-radius: 2rem;
                                 padding-left: 1rem;
                                 padding-right: 1rem;
+                                margin-right: 3rem;
                             }
-                            .visitHeadingText {
+                            .visitHeading {
+                                position: relative;
+                                float: left;
+                            }
+                            .visitText {
                                 position: relative;
                                 float: left;
                                 height: 2.5rem;
                                 line-height: 2.5rem;
                                 color: #CCD3E2;
                                 font-size: 1.2rem;
-                                margin-left: 4rem;
                             }
                             .visitTag {
                                 position: relative;
-                                float: right;
+                                float: left;
                                 line-height: 2rem;
                                 color: #5C91D2;
                                 border: 0.2rem solid #f5f6f6;
