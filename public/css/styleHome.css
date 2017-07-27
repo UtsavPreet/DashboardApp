@@ -28,7 +28,7 @@ html {
   background-color: #2F323A;
   height: 100%;
   left: 0;
-  width: 6rem;
+  width: 5rem;
 }
 .mainContainer .sideBar .activeIcon {
   position: absolute;
@@ -44,17 +44,17 @@ html {
 }
 .mainContainer .sideBar .inactiveIcon {
   position: relative;
-  top: 15rem;
+  top: 14rem;
   height: 6rem;
 }
 .mainContainer .sideBar .lastIcon {
   position: absolute;
-  bottom: 3rem;
+  bottom: 1rem;
 }
 .mainContainer .mainDiv {
   position: absolute;
   height: 100%;
-  left: 6rem;
+  left: 5rem;
   right: 0;
   background-color: #FBFBFB;
 }
@@ -115,6 +115,8 @@ html {
   background-color: #FBFBFB;
   border-bottom: 0.2rem solid #F5F5F6;
   top: 6rem;
+  height: 5rem;
+  line-height: 5rem;
 }
 .mainContainer .mainDiv .filterContainer .genericName {
   position: absolute;
@@ -158,45 +160,27 @@ html {
   padding-right: 3rem;
 }
 .mainContainer .mainDiv .filterContainer .filterText {
-  position: absolute;
-  top: 1rem;
+  position: relative;
+  float: left;
   margin-left: 2rem;
-  height: 4rem;
-  line-height: 4rem;
-  font-weight: 400;
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 .mainContainer .mainDiv .filterContainer .inactiveFilterText {
-  position: absolute;
-  top: 1rem;
+  position: relative;
+  float: left;
   margin-left: 2rem;
-  height: 4rem;
-  line-height: 4rem;
-  font-weight: 400;
-  font-size: 1.6rem;
-  left: 13rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   margin-left: 3rem;
-  color: #CDD4DE;
-}
-.mainContainer .mainDiv .filterContainer .secondinactiveFilterText {
-  position: absolute;
-  top: 1rem;
-  margin-left: 2rem;
-  height: 4rem;
-  line-height: 4rem;
-  font-weight: 400;
-  font-size: 1.6rem;
-  left: 13rem;
-  margin-left: 3rem;
-  margin-left: 15rem;
   color: #CDD4DE;
 }
 .mainContainer .mainDiv .userDiv {
   position: absolute;
-  top: 12rem;
+  top: 11rem;
   bottom: 0;
   background-color: #fff;
-  width: 33rem;
+  width: 28rem;
 }
 .mainContainer .mainDiv .userDiv .searchBar {
   position: absolute;
@@ -285,13 +269,13 @@ html {
 }
 .mainContainer .mainDiv .alphabet {
   position: absolute;
-  top: 12rem;
+  top: 11rem;
   bottom: 0;
   background-color: #fff;
-  width: 33rem;
-  padding-top: 0.8rem;
+  width: 28rem;
+  padding-top: 0.1rem;
   width: 5rem;
-  left: 33rem;
+  left: 28rem;
   background-color: #EEEFF0;
 }
 .mainContainer .mainDiv .alphabet .searchBar {
@@ -375,9 +359,8 @@ html {
 .mainContainer .mainDiv .alphabet .alpha {
   position: relative;
   height: 2rem;
-  line-height: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 0.5rem;
   color: #BDC4D5;
   font-weight: 300;
@@ -386,9 +369,8 @@ html {
 .mainContainer .mainDiv .selectedAlpha {
   position: relative;
   height: 2rem;
-  line-height: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 0.5rem;
   color: #BDC4D5;
   font-weight: 300;
@@ -398,17 +380,17 @@ html {
   background-color: #FBFBFB;
   border: 0.1rem solid #FBFBFB;
   border-radius: 50%;
-  margin-top: 0.5rem;
+  line-height: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-top: 0 !important;
 }
 .mainContainer .mainDiv .userDetails {
   position: absolute;
-  top: 12rem;
+  top: 11rem;
   bottom: 0;
-  left: 38rem;
-  right: 32rem;
+  left: 33rem;
+  right: 27rem;
   border: 0.2rem solid #F5F5F6;
   border-top: none;
   border-bottom: none;
@@ -522,14 +504,15 @@ html {
 }
 .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer {
   position: absolute;
-  height: 6rem;
+  top: 1.5rem;
+  height: 4.5rem;
   left: 15rem;
   right: 5rem;
   overflow-y: scroll;
 }
 .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   height: 2.4rem;
   line-height: 2.4rem;
   float: left;
@@ -539,8 +522,7 @@ html {
   border-radius: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 0.5rem;
 }
 .mainContainer .mainDiv .userDetails .preferenceCard .addItem {
   position: absolute;
@@ -558,7 +540,7 @@ html {
 }
 .mainContainer .mainDiv .userDetails .userTags {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   height: 2.4rem;
   line-height: 2.4rem;
   float: left;
@@ -568,8 +550,7 @@ html {
   border-radius: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 0.5rem;
   color: #51BC51;
 }
 .mainContainer .mainDiv .userDetails .eventHistory {
@@ -588,10 +569,63 @@ html {
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData {
   position: absolute;
-  height: 12rem;
+  height: 9rem;
+  margin-top: 3rem;
   left: 15rem;
   right: 5rem;
   overflow-y: auto;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event {
+  position: relative;
+  float: left;
+  margin-left: 1rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .eventTag {
+  position: relative;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  float: left;
+  color: #5C91D2;
+  font-size: 1rem;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitHeadingText {
+  position: relative;
+  float: left;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #CCD3E2;
+  font-size: 1.2rem;
+  margin-left: 4rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .visitTag {
+  position: relative;
+  float: right;
+  line-height: 2rem;
+  color: #5C91D2;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+}
+.mainContainer .mainDiv .userDetails .eventHistory .eventData .event .changeTag {
+  position: relative;
+  float: right;
+  line-height: 2rem;
+  color: #5C91D2;
+  border: 0.2rem solid #f5f6f6;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+  width: 1rem;
+  padding-left: 0.5rem;
 }
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .eventName {
   position: absolute;
@@ -657,8 +691,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo {
   position: absolute;
-  top: 12rem;
-  width: 32rem;
+  top: 11rem;
+  width: 27rem;
   right: 0;
   bottom: 0;
 }

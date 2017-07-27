@@ -1,450 +1,385 @@
-@fontSize: 1.8rem;
-@disabledTextColor: #CDD4DE;
-@alphabetColor: #BDC4D5;
-@textColor: #5C91D2;
-@topAdd: #1B5EAC;
-@divColor: #5387DE;
-@borderColor: #EFEFEF;
-@sideBarColor: #2F323A;
-@backgroundPage: #FBFBFB;
-@green: #52BB52;
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-*:focus {
-    outline: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-html {
-    font-size: 10px;
-}
-
-.mainContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #EEEFF0;
-    font-weight: 300;
-    .grey {
-        color: @disabledTextColor;
+    @fontSize: 1.8rem;
+    @disabledTextColor: #CDD4DE;
+    @alphabetColor: #BDC4D5;
+    @textColor: #5C91D2;
+    @topAdd: #1B5EAC;
+    @divColor: #5387DE;
+    @borderColor: #EFEFEF;
+    @sideBarColor: #2F323A;
+    @backgroundPage: #FBFBFB;
+    @green: #52BB52;
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    .sideBar {
-        position: absolute;
-        background-color: @sideBarColor;
-        height: 100%;
-        left: 0;
-        width: 6rem;
-        .activeIcon {
-            position: absolute;
-            padding-top: 1rem;
-            background-color: @divColor;
-            height: 6rem;
-            width: 100%;
-        }
-        .sideBarIcon {
-            height: 4rem;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
-        .inactiveIcon {
-            position: relative;
-            top: 15rem;
-            height: 6rem;
-        }
-        .lastIcon {
-            position: absolute;
-            bottom: 3rem;
-        }
+
+    *:focus {
+        outline: none;
     }
-    .mainDiv {
+
+     ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .mainContainer {
         position: absolute;
         height: 100%;
-        left: 6rem;
-        right: 0;
-        background-color: @backgroundPage;
-        .topBar {
-            position: absolute;
-            top: 0;
-            height: 6rem;
-            width: 100%;
-            background-color: @backgroundPage;
-            border-bottom: 0.2rem solid #F5F5F6;
-            .genericName {
-                position: absolute;
-                top: 2rem;
-                margin-left: 2rem;
-                height: 2rem;
-                line-height: 2rem;
-                font-weight: 300;
-                font-size: 1.8rem;
-                color: @textColor ;
-            }
-            .adminName {
-                position: absolute;
-                right: 18rem;
-                top: 2rem;
-                height: 2rem;
-                line-height: 2rem;
-                font-weight: 300;
-                font-size: @fontSize;
-                color: @textColor;
-            }
-            .settingsGear {
-                position: absolute;
-                top: 1rem;
-                height: 6rem;
-                right: 16rem;
-                .innerImg {
-                    position: absolute;
-                    height: 4rem;
-                }
-            }
-            .addDiv {
-                position: absolute;
-                height: 6rem;
-                line-height: 6rem;
-                right: 0;
-                font-size: 5rem;
-                background-color: @topAdd;
-                color: #fff;
-                padding-left: 3rem;
-                padding-right: 3rem;
-            }
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        background-color: #EEEFF0;
+        font-weight: 300;
+        .grey {
+            color: @disabledTextColor;
         }
-        .filterContainer {
-            .mainContainer.mainDiv.topBar();
-            top: 6rem;
-            .filterText {
-                position: absolute;
-                top: 1rem;
-                margin-left: 2rem;
-                height: 4rem;
-                line-height: 4rem;
-                font-weight: 400;
-                font-size: 1.6rem;
-            }
-            .inactiveFilterText {
-                .filterText();
-                left: 13rem;
-                margin-left: 3rem;
-                color: @disabledTextColor;
-            }
-            .secondinactiveFilterText {
-                .inactiveFilterText();
-                margin-left: 15rem;
-                color: @disabledTextColor;
-            }
-        }
-        .userDiv {
+        .sideBar {
             position: absolute;
-            top: 12rem;
-            bottom: 0;
-            background-color: #fff;
-            width: 33rem;
-            .searchBar {
-                position: absolute;
-                height: 4rem;
-                left: 2rem;
-                right: 2rem;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                border: 0.1rem solid #C1C1C1;
-                border-radius: 2rem;
-                .searchText {
-                    position: absolute;
-                    height: 4rem;
-                    background: transparent;
-                    border: none;
-                    resize: none;
-                    overflow: none;
-                    outline: none;
-                    width: 100%;
-                    padding: 1rem;
-                }
-                 ::-webkit-input-placeholder {
-                    /* Chrome/Opera/Safari */
-                    color: @textColor;
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                }
-                 ::-moz-placeholder {
-                    /* Firefox 19+ */
-                    color: @textColor;
-                }
-                 :-ms-input-placeholder {
-                    /* IE 10+ */
-                    color: @textColor;
-                }
-                 :-moz-placeholder {
-                    /* Firefox 18- */
-                    color: @textColor;
-                }
-                .phoneText {
-                    position: absolute;
-                    height: 4rem;
-                    line-height: 4rem;
-                    color: @textColor;
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                    padding-right: 1rem;
-                    right: 0;
-                }
-            }
-            .userContainer {
-                position: absolute;
-                top: 7rem;
-                bottom: 0;
-                width: 100%;
-                .users {
-                    position: relative;
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                    height: 4rem;
-                    line-height: 4rem;
-                    color: #000;
-                    .name {
-                        position: relative;
-                        font-size: 1.4rem;
-                        font-weight: 300;
-                        padding-left: 1rem;
-                        float: left;
-                    }
-                    .number {
-                        position: relative;
-                        color: @disabledTextColor;
-                        font-size: 1.4rem;
-                        font-weight: 300;
-                        padding-right: 1rem;
-                        float: right;
-                    }
-                }
-            }
-        }
-        .selected {
-            position: absolute;
+            background-color: @sideBarColor;
+            height: 100%;
             left: 0;
-            right: 0;
-            background-color: #458ACF;
-            color: #F5F5F6 !important;
-        }
-        .alphabet {
-            .userDiv();
-            padding-top: 0.8rem;
             width: 5rem;
-            left: 33rem;
-            background-color: #EEEFF0;
-            .alpha {
-                position: relative;
-                height: 2rem;
-                line-height: 2rem;
-                text-align: center;
-                font-size: 1.2rem;
-                padding-top: 0.5rem;
-                color: #BDC4D5;
-                font-weight: 300;
-                text-transform: uppercase;
-            }
-        }
-        .selectedAlpha {
-            .alphabet .alpha();
-            color: @textColor;
-            background-color: @backgroundPage;
-            border: 0.1rem solid @backgroundPage;
-            color: #5C91D2 !important;
-            background-color: #FBFBFB;
-            border: 0.1rem solid #FBFBFB;
-            border-radius: 50%;
-            margin-top: 0.5rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            padding-top: 0 !important;
-        }
-        .userDetails {
-            position: absolute;
-            top: 12rem;
-            bottom: 0;
-            left: 38rem;
-            right: 32rem;
-            border: 0.2rem solid #F5F5F6;
-            border-top: none;
-            border-bottom: none;
-            background-color: #fff;
-            .userCard {
-                position: relative;
-                height: 22rem;
-                width: 100%;
-                .contactName {
-                    position: relative;
-                    float: left;
-                    margin-left: 1rem;
-                    font-size: 1.6rem;
-                    color: @textColor;
-                    font-weight: 400;
-                    height: 4rem;
-                    line-height: 4rem;
-                }
-                .filledTag {
-                    position: relative;
-                    margin-top: 1rem;
-                    height: 2rem;
-                    line-height: 2rem;
-                    float: left;
-                    color: #fff;
-                    background-color: #BDC4D5;
-                    font-size: 0.8rem;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    border-radius: 0.5rem;
-                    padding-left: 0.2rem;
-                    padding-right: 0.2rem;
-                    margin-left: 1rem;
-                }
-                .review {
-                    position: relative;
-                    float: right;
-                    margin-top: 1rem;
-                    height: 2rem;
-                    margin-right: 4rem;
-                    line-height: 2rem;
-                    color: #CDD4DE;
-                    font-weight: 400;
-                    .image {
-                        position: relative;
-                        float: right;
-                        height: 2rem;
-                    }
-                }
-                .statContainer {
-                    position: relative;
-                    top: 2rem;
-                    .image {
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        height: 15rem;
-                    }
-                }
-                .statSummary {
-                    position: absolute;
-                    bottom: 0;
-                    height: 6rem;
-                    line-height: 6rem;
-                    width: 100%;
-                    .blueDot {
-                        position: relative;
-                        top: 1.2rem;
-                        float: left;
-                        margin-left: 12rem;
-                        border: 0.3rem solid @divColor;
-                        border-radius: 2rem;
-                    }
-                    .greenDot {
-                        .blueDot();
-                        margin-left: 2rem;
-                        border: 0.3rem solid @green;
-                    }
-                    .summaryText {
-                        position: relative;
-                        height: 3rem;
-                        line-height: 3rem;
-                        float: left;
-                        margin-left: 1rem;
-                        color: @disabledTextColor;
-                        font-size: 1.2rem;
-                        font-weight: 400;
-                    }
-                }
-            }
-            .preferenceCard {
-                position: relative;
+            .activeIcon {
+                position: absolute;
+                padding-top: 1rem;
+                background-color: @divColor;
                 height: 6rem;
                 width: 100%;
-                border-top: 0.2rem solid #F5F5F6;
-                .cardHeading {
+            }
+            .sideBarIcon {
+                height: 4rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            .inactiveIcon {
+                position: relative;
+                top: 14rem;
+                height: 6rem;
+            }
+            .lastIcon {
+                position: absolute;
+                bottom: 1rem;
+            }
+        }
+        .mainDiv {
+            position: absolute;
+            height: 100%;
+            left: 5rem;
+            right: 0;
+            background-color: @backgroundPage;
+            .topBar {
+                position: absolute;
+                top: 0;
+                height: 6rem;
+                width: 100%;
+                background-color: @backgroundPage;
+                border-bottom: 0.2rem solid #F5F5F6;
+                .genericName {
                     position: absolute;
-                    height: 6rem;
-                    left: 1rem;
-                    color: @disabledTextColor;
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                    line-height: 6rem;
-                }
-                .tagContainer {
-                    position: absolute;
-                    height: 6rem;
-                    left: 15rem;
-                    right: 5rem;
-                    overflow-y: scroll;
-                    .tags {
-                        position: relative;
-                        margin-top: 2rem;
-                        height: 2.4rem;
-                        line-height: 2.4rem;
-                        float: left;
-                        color: @textColor;
-                        font-size: 1rem;
-                        border: 0.2rem solid #f5f6f6;
-                        border-radius: 2rem;
-                        padding-left: 1rem;
-                        padding-right: 1rem;
-                        margin-left: 1rem;
-                        margin-bottom: 1rem;
-                    }
-                }
-                .addItem {
-                    position: absolute;
-                    top: 3rem;
+                    top: 2rem;
+                    margin-left: 2rem;
                     height: 2rem;
                     line-height: 2rem;
-                    right: 1rem;
-                    font-size: 2rem;
                     font-weight: 300;
+                    font-size: 1.8rem;
+                    color: @textColor ;
+                }
+                .adminName {
+                    position: absolute;
+                    right: 18rem;
+                    top: 2rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    font-weight: 300;
+                    font-size: @fontSize;
                     color: @textColor;
-                    padding-left: 0.8rem;
-                    padding-right: 0.8rem;
-                    border: 0.1rem solid @divColor;
-                    border-radius: 2rem;
                 }
-            }
-            .userTags {
-                .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags();
-                color: #51BC51;
-            }
-            .eventHistory {
-                position: relative;
-                height: 12rem;
-                width: 100%;
-                border-top: 0.2rem solid #F5F5F6;
-                .cardHeading {
+                .settingsGear {
                     position: absolute;
-                    margin: 1rem;
-                    color: @disabledTextColor;
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                    line-height: 6rem;
-                }
-                .eventData {
-                    position: absolute;
-                    height: 12rem;
-                    left: 15rem;
-                    right: 5rem;
-                    overflow-y: auto;
-                    .eventName {
+                    top: 1rem;
+                    height: 6rem;
+                    right: 16rem;
+                    .innerImg {
                         position: absolute;
-                        height: 9rem;
-                        top: 3rem;
-                        left: 0;
-                        right: 19rem;
-                        .eventTag {
+                        height: 4rem;
+                    }
+                }
+                .addDiv {
+                    position: absolute;
+                    height: 6rem;
+                    line-height: 6rem;
+                    right: 0;
+                    font-size: 5rem;
+                    background-color: @topAdd;
+                    color: #fff;
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+            }
+            .filterContainer {
+                .mainContainer.mainDiv.topBar();
+                top: 6rem;
+                height: 5rem;
+                line-height: 5rem;
+                .filterText {
+                    position: relative;
+                    float: left;
+                    margin-left: 2rem;
+                    font-weight: 300;
+                    font-size: 1.4rem;
+                }
+                .inactiveFilterText {
+                    .filterText();
+                    margin-left: 3rem;
+                    color: @disabledTextColor;
+                }
+            }
+            .userDiv {
+                position: absolute;
+                top: 11rem;
+                bottom: 0;
+                background-color: #fff;
+                width: 28rem;
+                .searchBar {
+                    position: absolute;
+                    height: 4rem;
+                    left: 2rem;
+                    right: 2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border: 0.1rem solid #C1C1C1;
+                    border-radius: 2rem;
+                    .searchText {
+                        position: absolute;
+                        height: 4rem;
+                        background: transparent;
+                        border: none;
+                        resize: none;
+                        overflow: none;
+                        outline: none;
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                     ::-webkit-input-placeholder {
+                        /* Chrome/Opera/Safari */
+                        color: @textColor;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                    }
+                     ::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: @textColor;
+                    }
+                     :-ms-input-placeholder {
+                        /* IE 10+ */
+                        color: @textColor;
+                    }
+                     :-moz-placeholder {
+                        /* Firefox 18- */
+                        color: @textColor;
+                    }
+                    .phoneText {
+                        position: absolute;
+                        height: 4rem;
+                        line-height: 4rem;
+                        color: @textColor;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        padding-right: 1rem;
+                        right: 0;
+                    }
+                }
+                .userContainer {
+                    position: absolute;
+                    top: 7rem;
+                    bottom: 0;
+                    width: 100%;
+                    .users {
+                        position: relative;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        height: 4rem;
+                        line-height: 4rem;
+                        color: #000;
+                        .name {
                             position: relative;
+                            font-size: 1.4rem;
+                            font-weight: 300;
+                            padding-left: 1rem;
+                            float: left;
+                        }
+                        .number {
+                            position: relative;
+                            color: @disabledTextColor;
+                            font-size: 1.4rem;
+                            font-weight: 300;
+                            padding-right: 1rem;
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .selected {
+                position: absolute;
+                left: 0;
+                right: 0;
+                background-color: #458ACF;
+                color: #F5F5F6 !important;
+            }
+            .alphabet {
+                .userDiv();
+                padding-top: 0.1rem;
+                width: 5rem;
+                left: 28rem;
+                background-color: #EEEFF0;
+                .alpha {
+                    position: relative;
+                    height: 2rem;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    padding-top: 0.5rem;
+                    color: #BDC4D5;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+            }
+            .selectedAlpha {
+                .alphabet .alpha();
+                color: @textColor;
+                background-color: @backgroundPage;
+                border: 0.1rem solid @backgroundPage;
+                color: #5C91D2 !important;
+                background-color: #FBFBFB;
+                border: 0.1rem solid #FBFBFB;
+                border-radius: 50%;
+                line-height: 2rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                padding-top: 0 !important;
+            }
+            .userDetails {
+                position: absolute;
+                top: 11rem;
+                bottom: 0;
+                left: 33rem;
+                right: 27rem;
+                border: 0.2rem solid #F5F5F6;
+                border-top: none;
+                border-bottom: none;
+                background-color: #fff;
+                .userCard {
+                    position: relative;
+                    height: 22rem;
+                    width: 100%;
+                    .contactName {
+                        position: relative;
+                        float: left;
+                        margin-left: 1rem;
+                        font-size: 1.6rem;
+                        color: @textColor;
+                        font-weight: 400;
+                        height: 4rem;
+                        line-height: 4rem;
+                    }
+                    .filledTag {
+                        position: relative;
+                        margin-top: 1rem;
+                        height: 2rem;
+                        line-height: 2rem;
+                        float: left;
+                        color: #fff;
+                        background-color: #BDC4D5;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        border-radius: 0.5rem;
+                        padding-left: 0.2rem;
+                        padding-right: 0.2rem;
+                        margin-left: 1rem;
+                    }
+                    .review {
+                        position: relative;
+                        float: right;
+                        margin-top: 1rem;
+                        height: 2rem;
+                        margin-right: 4rem;
+                        line-height: 2rem;
+                        color: #CDD4DE;
+                        font-weight: 400;
+                        .image {
+                            position: relative;
+                            float: right;
+                            height: 2rem;
+                        }
+                    }
+                    .statContainer {
+                        position: relative;
+                        top: 2rem;
+                        .image {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 15rem;
+                        }
+                    }
+                    .statSummary {
+                        position: absolute;
+                        bottom: 0;
+                        height: 6rem;
+                        line-height: 6rem;
+                        width: 100%;
+                        .blueDot {
+                            position: relative;
+                            top: 1.2rem;
+                            float: left;
+                            margin-left: 12rem;
+                            border: 0.3rem solid @divColor;
+                            border-radius: 2rem;
+                        }
+                        .greenDot {
+                            .blueDot();
+                            margin-left: 2rem;
+                            border: 0.3rem solid @green;
+                        }
+                        .summaryText {
+                            position: relative;
+                            height: 3rem;
+                            line-height: 3rem;
+                            float: left;
+                            margin-left: 1rem;
+                            color: @disabledTextColor;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .preferenceCard {
+                    position: relative;
+                    height: 6rem;
+                    width: 100%;
+                    border-top: 0.2rem solid #F5F5F6;
+                    .cardHeading {
+                        position: absolute;
+                        height: 6rem;
+                        left: 1rem;
+                        color: @disabledTextColor;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        line-height: 6rem;
+                    }
+                    .tagContainer {
+                        position: absolute;
+                        top: 1.5rem;
+                        height: 4.5rem;
+                        left: 15rem;
+                        right: 5rem;
+                        overflow-y: scroll;
+                        .tags {
+                            position: relative;
+                            margin-top: 0.5rem;
                             height: 2.4rem;
                             line-height: 2.4rem;
                             float: left;
@@ -454,193 +389,296 @@ html {
                             border-radius: 2rem;
                             padding-left: 1rem;
                             padding-right: 1rem;
-                            margin-left: 1rem;
-                            margin-bottom: 1rem;
+                            margin-left: 0.5rem;
                         }
                     }
-                    .visitCounter {
+                    .addItem {
                         position: absolute;
-                        height: 10rem;
-                        top: 2rem;
-                        line-height: 3rem;
-                        right: 4rem;
-                        .headingText {
+                        top: 3rem;
+                        height: 2rem;
+                        line-height: 2rem;
+                        right: 1rem;
+                        font-size: 2rem;
+                        font-weight: 300;
+                        color: @textColor;
+                        padding-left: 0.8rem;
+                        padding-right: 0.8rem;
+                        border: 0.1rem solid @divColor;
+                        border-radius: 2rem;
+                    }
+                }
+                .userTags {
+                    .mainContainer .mainDiv .userDetails .preferenceCard .tagContainer .tags();
+                    color: #51BC51;
+                }
+                .eventHistory {
+                    position: relative;
+                    height: 12rem;
+                    width: 100%;
+                    border-top: 0.2rem solid #F5F5F6;
+                    .cardHeading {
+                        position: absolute;
+                        margin: 1rem;
+                        color: @disabledTextColor;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        line-height: 6rem;
+                    }
+                    .eventData {
+                        position: absolute;
+                        height: 9rem;
+                        margin-top: 3rem;
+                        left: 15rem;
+                        right: 5rem;
+                        overflow-y: auto;
+                        .event {
                             position: relative;
-                            color: #CCD3E2;
-                            font-size: 1.2rem;
-                            top: 1rem;
+                            float: left;
+                            margin-left: 1rem;
+                            height: 3rem;
+                            line-height: 3rem;
+                            .eventTag {
+                                position: relative;
+                                height: 2.5rem;
+                                line-height: 2.5rem;
+                                float: left;
+                                color: #5C91D2;
+                                font-size: 1rem;
+                                border: 0.2rem solid #f5f6f6;
+                                border-radius: 2rem;
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                            }
+                            .visitHeadingText {
+                                position: relative;
+                                float: left;
+                                height: 2.5rem;
+                                line-height: 2.5rem;
+                                color: #CCD3E2;
+                                font-size: 1.2rem;
+                                margin-left: 4rem;
+                            }
+                            .visitTag {
+                                position: relative;
+                                float: right;
+                                line-height: 2rem;
+                                color: #5C91D2;
+                                border: 0.2rem solid #f5f6f6;
+                                border-radius: 2rem;
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                margin-left: 0.5rem;
+                            }
+                            .changeTag {
+                                .visitTag();
+                                width: 1rem;
+                                padding-left: 0.5rem;
+                            }
                         }
-                        .tag {
-                            position: relative;
-                            line-height: 2rem;
-                            color: @textColor;
-                            border: 0.2rem solid #f5f6f6;
-                            border-radius: 2rem;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-left: 0.5rem;
-                            display: inline-block;
-                            .add {
-                                height: 2rem;
+                        .eventName {
+                            position: absolute;
+                            height: 9rem;
+                            top: 3rem;
+                            left: 0;
+                            right: 19rem;
+                            .eventTag {
+                                position: relative;
+                                height: 2.4rem;
+                                line-height: 2.4rem;
+                                float: left;
+                                color: @textColor;
+                                font-size: 1rem;
+                                border: 0.2rem solid #f5f6f6;
+                                border-radius: 2rem;
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                margin-left: 1rem;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .visitCounter {
+                            position: absolute;
+                            height: 10rem;
+                            top: 2rem;
+                            line-height: 3rem;
+                            right: 4rem;
+                            .headingText {
+                                position: relative;
+                                color: #CCD3E2;
+                                font-size: 1.2rem;
+                                top: 1rem;
+                            }
+                            .tag {
+                                position: relative;
+                                line-height: 2rem;
+                                color: @textColor;
+                                border: 0.2rem solid #f5f6f6;
+                                border-radius: 2rem;
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                margin-left: 0.5rem;
+                                display: inline-block;
+                                .add {
+                                    height: 2rem;
+                                }
                             }
                         }
                     }
-                }
-                .addItem {
-                    position: absolute;
-                    top: 3rem;
-                    height: 2rem;
-                    line-height: 2rem;
-                    right: 1rem;
-                    font-size: 2rem;
-                    font-weight: 300;
-                    color: #5C91D2;
-                    padding-left: 0.8rem;
-                    padding-right: 0.8rem;
-                    border: 0.1rem solid #5387DE;
-                    border-radius: 2rem;
-                }
-            }
-        }
-        .userInfo {
-            position: absolute;
-            top: 12rem;
-            width: 32rem;
-            right: 0;
-            bottom: 0;
-            .infoCard {
-                position: absolute;
-                height: 14rem;
-                width: 100%;
-                .headingText {
-                    position: relative;
-                    margin-top: 0.5rem;
-                    margin-left: 1rem;
-                    max-width: 30rem;
-                    color: black;
-                    text-transform: uppercase;
-                    height: 3rem;
-                    font-size: 1.2rem;
-                    line-height: 3rem;
-                    font-weight: 500;
-                }
-                .aboutText {
-                    position: relative;
-                    margin-left: 1rem;
-                    max-width: 25rem;
-                    height: 5rem;
-                    font-size: 1.2rem;
-                }
-                .contactDetails {
-                    position: relative;
-                    margin-left: 1rem;
-                    height: 3rem;
-                    line-height: 0rem;
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                    .heading {
-                        position: relative;
-                        float: left;
-                        color: @textColor;
-                    }
-                    .detail {
-                        position: relative;
-                        float: left;
-                        margin-left: 7rem;
-                    }
-                }
-            }
-            .eventCard {
-                position: absolute;
-                height: 15rem;
-                top: 14rem;
-                background-color: #fff;
-                width: 100%;
-                overflow-y: scroll;
-                .headingText {
-                    .mainContainer .mainDiv .userInfo .infoCard .headingText();
-                }
-                .eventData {
-                    position: relative;
-                    height: 4rem;
-                    line-height: 4rem;
-                    width: 100%;
-                    .dot {
-                        position: relative;
-                        float: left;
-                        height: 1rem;
-                        width: 1rem;
-                        border: 0.3rem solid #F47357;
-                        border-radius: 1rem;
-                        top: 0.5rem;
-                        margin-left: 1rem;
-                    }
-                    .time {
-                        position: relative;
-                        float: left;
+                    .addItem {
+                        position: absolute;
+                        top: 3rem;
                         height: 2rem;
                         line-height: 2rem;
-                        background-color: #F47357;
-                        border-radius: 0.6rem;
-                        color: #fff;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                        margin-left: 1rem;
-                        font-size: 1rem;
-                    }
-                    .eventText {
-                        position: relative;
-                        line-height: 2rem;
-                        float: left;
-                        margin-left: 1rem;
-                        font-size: 1.2rem;
-                        font-weight: 400;
-                        color: @disabledTextColor;
-                    }
-                    .tableNumber {
-                        position: relative;
-                        float: right;
-                        height: 3rem;
-                        line-height: 2rem;
-                        color: #CDD4DE;
-                        font-size: 1.2rem;
-                        font-weight: 400;
-                        margin-right: 2rem;
+                        right: 1rem;
+                        font-size: 2rem;
+                        font-weight: 300;
+                        color: #5C91D2;
+                        padding-left: 0.8rem;
+                        padding-right: 0.8rem;
+                        border: 0.1rem solid #5387DE;
+                        border-radius: 2rem;
                     }
                 }
             }
-            .dinningCard {
-                position: relative;
+            .userInfo {
                 position: absolute;
-                top: 29rem;
+                top: 11rem;
+                width: 27rem;
+                right: 0;
                 bottom: 0;
-                width: 100%;
-                overflow-y: auto;
-                .headingText {
-                    .mainContainer .mainDiv .userInfo .infoCard .headingText();
+                .infoCard {
+                    position: absolute;
+                    height: 14rem;
+                    width: 100%;
+                    .headingText {
+                        position: relative;
+                        margin-top: 0.5rem;
+                        margin-left: 1rem;
+                        max-width: 30rem;
+                        color: black;
+                        text-transform: uppercase;
+                        height: 3rem;
+                        font-size: 1.2rem;
+                        line-height: 3rem;
+                        font-weight: 500;
+                    }
+                    .aboutText {
+                        position: relative;
+                        margin-left: 1rem;
+                        max-width: 25rem;
+                        height: 5rem;
+                        font-size: 1.2rem;
+                    }
+                    .contactDetails {
+                        position: relative;
+                        margin-left: 1rem;
+                        height: 3rem;
+                        line-height: 0rem;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        .heading {
+                            position: relative;
+                            float: left;
+                            color: @textColor;
+                        }
+                        .detail {
+                            position: relative;
+                            float: left;
+                            margin-left: 7rem;
+                        }
+                    }
                 }
-                .dinningData {
-                    .mainContainer .mainDiv .userInfo .eventCard .eventData();
-                    .blueDot {
-                        border: 0.3rem solid @divColor;
+                .eventCard {
+                    position: absolute;
+                    height: 15rem;
+                    top: 14rem;
+                    background-color: #fff;
+                    width: 100%;
+                    overflow-y: scroll;
+                    .headingText {
+                        .mainContainer .mainDiv .userInfo .infoCard .headingText();
                     }
-                    .greyDot {
-                        border: 0.3rem solid grey;
+                    .eventData {
+                        position: relative;
+                        height: 4rem;
+                        line-height: 4rem;
+                        width: 100%;
+                        .dot {
+                            position: relative;
+                            float: left;
+                            height: 1rem;
+                            width: 1rem;
+                            border: 0.3rem solid #F47357;
+                            border-radius: 1rem;
+                            top: 0.5rem;
+                            margin-left: 1rem;
+                        }
+                        .time {
+                            position: relative;
+                            float: left;
+                            height: 2rem;
+                            line-height: 2rem;
+                            background-color: #F47357;
+                            border-radius: 0.6rem;
+                            color: #fff;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1rem;
+                            font-size: 1rem;
+                        }
+                        .eventText {
+                            position: relative;
+                            line-height: 2rem;
+                            float: left;
+                            margin-left: 1rem;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            color: @disabledTextColor;
+                        }
+                        .tableNumber {
+                            position: relative;
+                            float: right;
+                            height: 3rem;
+                            line-height: 2rem;
+                            color: #CDD4DE;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            margin-right: 2rem;
+                        }
                     }
-                    .greenDot {
-                        border: 0.3rem solid @green;
+                }
+                .dinningCard {
+                    position: relative;
+                    position: absolute;
+                    top: 29rem;
+                    bottom: 0;
+                    width: 100%;
+                    overflow-y: auto;
+                    .headingText {
+                        .mainContainer .mainDiv .userInfo .infoCard .headingText();
                     }
-                    .blueTime {
-                        background-color: @divColor;
-                    }
-                    .greyTime {
-                        background-color: grey;
-                    }
-                    .greenTime {
-                        background-color: @green;
+                    .dinningData {
+                        .mainContainer .mainDiv .userInfo .eventCard .eventData();
+                        .blueDot {
+                            border: 0.3rem solid @divColor;
+                        }
+                        .greyDot {
+                            border: 0.3rem solid grey;
+                        }
+                        .greenDot {
+                            border: 0.3rem solid @green;
+                        }
+                        .blueTime {
+                            background-color: @divColor;
+                        }
+                        .greyTime {
+                            background-color: grey;
+                        }
+                        .greenTime {
+                            background-color: @green;
+                        }
                     }
                 }
             }
         }
     }
-}
