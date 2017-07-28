@@ -1,4 +1,5 @@
     @fontSize: 1.8rem;
+    @white: #fff;
     @disabledTextColor: #CDD4DE;
     @alphabetColor: #BDC4D5;
     @textColor: #5C91D2;
@@ -31,7 +32,6 @@
         height: 100%;
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        background-color: #EEEFF0;
         font-weight: 300;
         .grey {
             color: @disabledTextColor;
@@ -74,7 +74,7 @@
                 top: 0;
                 height: 6rem;
                 width: 100%;
-                background-color: @backgroundPage;
+                background-color: @white;
                 border-bottom: 0.2rem solid #F5F5F6;
                 .genericName {
                     position: absolute;
@@ -112,7 +112,7 @@
                     line-height: 6rem;
                     right: 0;
                     font-size: 4rem;
-                    background-color: #1B5EAC;
+                    background-color: @topAdd;
                     color: #fff;
                     padding-left: 2rem;
                     padding-right: 2rem;
@@ -132,7 +132,7 @@
                     font-size: 1.4rem;
                     color: @disabledTextColor;
                 }
-                .active{
+                .active {
                     color: black !important;
                 }
                 .inactive {
@@ -336,8 +336,8 @@
                         bottom: 0;
                         height: 6rem;
                         line-height: 6rem;
-                        left: 12rem;
-                        right: 12rem;
+                        left: 50%;
+                        transform: translateX(-50%);
                         .blueDot {
                             position: relative;
                             top: 2.7rem;
@@ -387,7 +387,7 @@
                             position: relative;
                             margin-top: 0.5rem;
                             height: 2.4rem;
-                            line-height: 2.4rem;
+                            line-height: 2rem;
                             float: left;
                             color: @textColor;
                             font-size: 1rem;
@@ -447,7 +447,7 @@
                             .eventTag {
                                 position: relative;
                                 height: 2.5rem;
-                                line-height: 2.5rem;
+                                line-height: 2.1rem;
                                 float: left;
                                 color: #5C91D2;
                                 font-size: 1rem;
@@ -669,7 +669,12 @@
                         .mainContainer .mainDiv .userInfo .infoCard .headingText();
                     }
                     .dinningData {
-                        .mainContainer .mainDiv .userInfo .eventCard .eventData();
+                        .mainContainer .mainDiv .userInfo .eventCard .eventData(); // .dot:nth-child(1){
+                        //     border: 0.3rem solid @green;
+                        // }
+                        // .dot:nth-child(2){
+                        //     border: 0.3rem solid @divColor;
+                        // }
                         .blueDot {
                             border: 0.3rem solid @divColor;
                         }

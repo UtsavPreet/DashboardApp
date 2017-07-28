@@ -1,35 +1,38 @@
 var selectedUser;
 var filterText;
+var priorityUser = [];
 $(document).ready(function () {
     makeTemplates();
 
-rb('.mainContainer', 'app', data);
-        $('.mainContainer .mainDiv .userDiv .searchBar .searchText').keyup(function () {
-            searchData('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', '.searchText', '.searchText');
-        });
-        bind('.userContainer .users', function () {
-            console.log("Tapped");
-            $('.selected').removeClass('selected');
-            $(this).addClass('selected');
-            selectedUser = $(this).children('.name').text().trim();
-            loadDashboard(selectedUser);
-        });
-        bind('.mainContainer .mainDiv .alphabet .alpha', function () {
-            $('.selectedAlpha').removeClass('selectedAlpha');
-            $(this).addClass('selectedAlpha');
-            var key = $(this).text().trim();
-            searchByAlpha('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', key, key);
-        });
-        bind('.mainContainer .mainDiv .filterContainer .filterText', function () {
-            $('.active').removeClass('active');
-            $(this).addClass('active');
-            filterText = $(this).text().trim();
-            sortArray(filterText);
-        });
+    rb('.mainContainer', 'app', data);
+    rb('.userContainer', 'user', data.users);
+    $('.mainContainer .mainDiv .userDiv .searchBar .searchText').keyup(function () {
+        searchData('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', '.searchText', '.searchText');
+    });
+    bind('.userContainer .users', function () {
+        console.log("Tapped");
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+        selectedUser = $(this).children('.name').text().trim();
+        loadDashboard(selectedUser);
+    });
+    bind('.mainContainer .mainDiv .alphabet .alpha', function () {
+        $('.selectedAlpha').removeClass('selectedAlpha');
+        $(this).addClass('selectedAlpha');
+        var key = $(this).text().trim();
+        searchByAlpha('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', key, key);
+    });
+    bind('.mainContainer .mainDiv .filterContainer .filterText', function () {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+        filterText = $(this).text().trim();
+        sortArray(filterText);
 
     });
-    
-    function searchData(userPath, userToSearch, index, input) {
+
+});
+
+function searchData(userPath, userToSearch, index, input) {
     if ($(input).val().length > 0) {
         $(userPath).show().filter(function () {
             return $(this).find(userToSearch).text().toLowerCase().indexOf($(index).val().toLowerCase()) == -1;
@@ -57,37 +60,42 @@ function loadDashboard(user) {
         }
     }
 }
-function sortArray(filterText){
-    switch (filterText) {
-                case 'Alphabetically':
-                    console.log("its" + filterText);
-                    $(this).addClass('active');
-                    data.users.sort((obj1, obj2) => {
-                        return obj1.userName > obj2.userName
-                    });
-                    break;
-                case 'Last Added':
-                    console.log("its" + filterText);
-                    data.users.reverse();
-                    break;
-                case 'VIP':
-                    console.log("its" + filterText);
-                    data.users.sort((obj1, obj2) => {
-                        if (obj1.tag == 'VIP')
-                            return obj1.userName > obj2.userName
-                    });
 
-                default:
-                    break;
+function sortArray(filterText) {
+    switch (filterText) {
+        case 'Alphabetically':
+            console.log("its" + filterText);
+            $(this).addClass('active');
+            data.users.sort((obj1, obj2) => {
+                return obj1.userName > obj2.userName
+            });
+            priority = false;
+            break;
+        case 'Last Added':
+            console.log("its" + filterText);
+            data.users.reverse();
+            priority = false;
+            break;
+        case 'VIP':
+            console.log("its" + filterText);
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].priority == 1) {
+                    priorityUser.push(data.users[i]);
+                }
             }
-            bindScreen();
+            priority = true;
+            break;
+
+        default:
+            break;
+    }
+    bindScreen(priority);
 }
 
-function bindScreen () {
-    rb('.mainContainer', 'app', data);
-        $('.mainContainer .mainDiv .userDiv .searchBar .searchText').keyup(function () {
-            searchData('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', '.searchText', '.searchText');
-        });
+function bindScreen(priority) {
+    if (priority) {
+        rb('.userContainer', 'user', priorityUser);
+        priorityUser=[];
         bind('.userContainer .users', function () {
             console.log("Tapped");
             $('.selected').removeClass('selected');
@@ -95,18 +103,15 @@ function bindScreen () {
             selectedUser = $(this).children('.name').text().trim();
             loadDashboard(selectedUser);
         });
-        bind('.mainContainer .mainDiv .alphabet .alpha', function () {
-            $('.selectedAlpha').removeClass('selectedAlpha');
-            $(this).addClass('selectedAlpha');
-            var key = $(this).text().trim();
-            searchByAlpha('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', key, key);
+    } else {
+        rb('.userContainer', 'user', data.users);
+        bind('.userContainer .users', function () {
+            console.log("Tapped");
+            $('.selected').removeClass('selected');
+            $(this).addClass('selected');
+            selectedUser = $(this).children('.name').text().trim();
+            loadDashboard(selectedUser);
         });
-        bind('.mainContainer .mainDiv .filterContainer .filterText', function () {
-            // $('.active').removeClass('active');
-            $(this).addClass('active');
-            filterText = $(this).text().trim();
-             sortArray(filterText);
-            
-        });
+    }
 
 }

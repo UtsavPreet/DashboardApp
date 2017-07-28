@@ -103,42 +103,49 @@ var data = {
     users: [{
             userName: "ADemo User",
             contactNumber: "9999-999-999",
-            tag:'VIP'
+            priority:'1'
         },
         {
             userName: "BDemo User",
             contactNumber: "9999-999-999",
-            tag:'General'
+            priority:'0'
+
         },
         {
             userName: "CDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'0'
         },
         {
             userName: "DDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'1'
         },
         {
             userName: "FDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'1'
         },
         {
             userName: "GDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'1'
         },
         {
             userName: "EDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'0'
         },
         
         {
             userName: "GDemo User",
-            contactNumber: "9999-999-999"
+            contactNumber: "9999-999-999",
+            priority:'1'
         },
         {
             userName: "HDemo User",
             contactNumber: "9999-999-999",
-            tag:'VIP'
+            priority:'1'
         },
     ]
 }
@@ -248,31 +255,31 @@ var usersData ={
                 time:"17:24",
                 eventDate:"Saturday, May 13",
                 tableNumber:"Table 3",
-                color:"red",
+                color:"blue",
             },
             {
                 time:"17:24",
                 eventDate:"Saturday, May 13",
                 tableNumber:"Table 3",
-                color:"red",
+                color:"blue",
             },
             {
                 time:"17:24",
                 eventDate:"Saturday, May 13",
                 tableNumber:"Table 3",
-                color:"red",
+                color:"grey",
             },
             {
                 time:"17:24",
                 eventDate:"Saturday, May 13",
                 tableNumber:"Table 3",
-                color:"red",
+                color:"green",
             },
             {
                 time:"17:24",
                 eventDate:"Saturday, May 13",
                 tableNumber:"Table 3",
-                color:"red",
+                color:"green",
             },
         ]
     }]

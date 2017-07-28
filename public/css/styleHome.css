@@ -17,7 +17,6 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  background-color: #EEEFF0;
   font-weight: 300;
 }
 .mainContainer .grey {
@@ -62,7 +61,7 @@ html {
   top: 0;
   height: 6rem;
   width: 100%;
-  background-color: #FBFBFB;
+  background-color: #fff;
   border-bottom: 0.2rem solid #F5F5F6;
 }
 .mainContainer .mainDiv .topBar .genericName {
@@ -112,7 +111,7 @@ html {
   top: 0;
   height: 6rem;
   width: 100%;
-  background-color: #FBFBFB;
+  background-color: #fff;
   border-bottom: 0.2rem solid #F5F5F6;
   top: 6rem;
   height: 5rem;
@@ -459,8 +458,8 @@ html {
   bottom: 0;
   height: 6rem;
   line-height: 6rem;
-  left: 12rem;
-  right: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .mainContainer .mainDiv .userDetails .userCard .statSummary .blueDot {
   position: relative;
@@ -515,7 +514,7 @@ html {
   position: relative;
   margin-top: 0.5rem;
   height: 2.4rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;
@@ -544,7 +543,7 @@ html {
   position: relative;
   margin-top: 0.5rem;
   height: 2.4rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;
@@ -587,7 +586,7 @@ html {
 .mainContainer .mainDiv .userDetails .eventHistory .eventData .event .eventTag {
   position: relative;
   height: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 2.1rem;
   float: left;
   color: #5C91D2;
   font-size: 1rem;

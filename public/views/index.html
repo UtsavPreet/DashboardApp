@@ -19,7 +19,6 @@
 <script type="text/javascript" src="../js/base.js"></script>
 <script type="text/javascript" src="../js/data.js"></script>
 <script type="text/javascript" src="../js/index.js"></script>
-
 <script id="appTemplate" type="text/x-jsrender">
     <div class="sideBar">
         <div class="activeIcon">
@@ -71,16 +70,7 @@
                 </div>
             </div>
             <div class="userContainer">
-                {^{for users}}
-                <div class="users">
-                    <div class="name">
-                        {^{:userName}}
-                    </div>
-                    <div class="number">
-                        {^{:contactNumber}}
-                    </div>
-                </div>
-                {{/for}}
+                {{include tmpl="#userTemplate"/}}
             </div>
         </div>
         <div class="alphabet">
@@ -94,6 +84,18 @@
              {{include tmpl="#dashboardTemplate"/}}
         </div>
     </div>
+</script>
+<script id="userTemplate" type="text/x-jsrender">
+             
+                <div class="users">
+                    <div class="name">
+                        {^{:userName}}
+                    </div>
+                    <div class="number">
+                        {^{:contactNumber}}
+                    </div>
+                </div>
+                
 </script>
 <script id="dashboardTemplate" type="text/x-jsrender">
     
@@ -239,8 +241,7 @@
                 </div>
                 {{for dinningData}}
                 <div class="dinningData">
-                    <div class="dot blueDot" style="background:{{:color}}">
-
+                    <div class="dot blueDot">
                     </div>
                     <div class="time blueTime">
                        {{:time}}
