@@ -90,7 +90,11 @@
             </div>
             {{/for}}
         </div>
-        {^{for userData}}
+
+    </div>
+</script>
+<script id="dashboardTemplate" type="text/x-jsrender">
+    {^{for userData}}
          {^{if ~selectedUser!==''}}
         <div class="userDetails">
             <div class="userCard">
@@ -250,10 +254,7 @@
                 {{/for}}
             </div>
             {{/for}}
-            {{/for}}
-        </div>
-
-    </div>
+            </div>
+       {{/for}}
 </script>
-
 </html>
