@@ -85,13 +85,13 @@ html {
   color: #5C91D2;
 }
 .mainContainer .mainDiv .topBar .settingsGear {
-  position: absolute;
-  top: 1rem;
-  height: 6rem;
-  right: 11rem;
+  position: relative;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 7rem;
 }
 .mainContainer .mainDiv .topBar .settingsGear .innerImg {
-  position: absolute;
+  position: relative;
   height: 4rem;
 }
 .mainContainer .mainDiv .topBar .addDiv {
@@ -138,13 +138,13 @@ html {
   color: #5C91D2;
 }
 .mainContainer .mainDiv .filterContainer .settingsGear {
-  position: absolute;
-  top: 1rem;
-  height: 6rem;
-  right: 11rem;
+  position: relative;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 7rem;
 }
 .mainContainer .mainDiv .filterContainer .settingsGear .innerImg {
-  position: absolute;
+  position: relative;
   height: 4rem;
 }
 .mainContainer .mainDiv .filterContainer .addDiv {
@@ -186,8 +186,8 @@ html {
   height: 4rem;
   left: 2rem;
   right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  top: 2rem;
+  bottom: 2rem;
   border: 0.1rem solid #C1C1C1;
   border-radius: 2rem;
 }
@@ -201,6 +201,10 @@ html {
   outline: none;
   width: 100%;
   padding: 1rem;
+  padding-left: 1.2rem;
+  color: #5C91D2;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 .mainContainer .mainDiv .userDiv .searchBar ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -272,7 +276,7 @@ html {
   bottom: 0;
   background-color: #fff;
   width: 28rem;
-  padding-top: 0.1rem;
+  padding-top: 1.2rem;
   width: 5rem;
   left: 28rem;
   background-color: #EEEFF0;
@@ -282,8 +286,8 @@ html {
   height: 4rem;
   left: 2rem;
   right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  top: 2rem;
+  bottom: 2rem;
   border: 0.1rem solid #C1C1C1;
   border-radius: 2rem;
 }
@@ -297,6 +301,10 @@ html {
   outline: none;
   width: 100%;
   padding: 1rem;
+  padding-left: 1.2rem;
+  color: #5C91D2;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 .mainContainer .mainDiv .alphabet .searchBar ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -403,7 +411,7 @@ html {
 .mainContainer .mainDiv .userDetails .userCard .contactName {
   position: relative;
   float: left;
-  margin-left: 1rem;
+  margin-left: 2rem;
   font-size: 1.6rem;
   color: #5C91D2;
   font-weight: 400;
@@ -412,16 +420,16 @@ html {
 }
 .mainContainer .mainDiv .userDetails .userCard .filledTag {
   position: relative;
-  margin-top: 1.5rem;
-  height: 2rem;
-  line-height: 2rem;
+  margin-top: 1.7rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   float: left;
   color: #fff;
   background-color: #BDC4D5;
   font-size: 0.8rem;
   font-weight: 400;
   text-transform: uppercase;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   margin-left: 1rem;
@@ -708,8 +716,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard .headingText {
   position: relative;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
   max-width: 30rem;
   color: black;
   text-transform: uppercase;
@@ -720,16 +728,18 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard .aboutText {
   position: relative;
-  margin-left: 1rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
   max-width: 25rem;
-  height: 5rem;
+  height: 3rem;
   font-size: 1.2rem;
 }
 .mainContainer .mainDiv .userInfo .infoCard .contactDetails {
   position: relative;
-  margin-left: 1rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
   height: 3rem;
-  line-height: 0rem;
+  line-height: 3rem;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -753,8 +763,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .eventCard .headingText {
   position: relative;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
   max-width: 30rem;
   color: black;
   text-transform: uppercase;
@@ -765,8 +775,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .eventCard .eventData {
   position: relative;
-  height: 4rem;
-  line-height: 4rem;
+  padding-top: 1rem;
+  height: 3.5rem;
   width: 100%;
 }
 .mainContainer .mainDiv .userInfo .eventCard .eventData .dot {
@@ -821,8 +831,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .dinningCard .headingText {
   position: relative;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
   max-width: 30rem;
   color: black;
   text-transform: uppercase;
@@ -833,8 +843,8 @@ html {
 }
 .mainContainer .mainDiv .userInfo .dinningCard .dinningData {
   position: relative;
-  height: 4rem;
-  line-height: 4rem;
+  padding-top: 1rem;
+  height: 3.5rem;
   width: 100%;
 }
 .mainContainer .mainDiv .userInfo .dinningCard .dinningData .dot {
