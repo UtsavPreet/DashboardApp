@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../js/base.js"></script>
 <script type="text/javascript" src="../js/data.js"></script>
 <script type="text/javascript" src="../js/index.js"></script>
-<script type="text/javascript" src="../screens/appScreen/screen.js"></script>
+
 <script id="appTemplate" type="text/x-jsrender">
     <div class="sideBar">
         <div class="activeIcon">
@@ -52,13 +52,13 @@
         </div>
         <div class="filterContainer">
             {{for filters}}
-            <div class="filterText inactive">
+            <div class="filterText">
                 {{:active}}
             </div>
-            <div class="filterText inactive">
+            <div class="filterText">
                 {{:inactive}}
             </div>
-            <div class="filterText inactive">
+            <div class="filterText">
                 {{:inactiveSecondary}}
             </div>
             {{/for}}
