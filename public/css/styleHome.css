@@ -166,15 +166,14 @@ html {
   margin-left: 2rem;
   font-weight: 300;
   font-size: 1.4rem;
-}
-.mainContainer .mainDiv .filterContainer .inactiveFilterText {
-  position: relative;
-  float: left;
-  margin-left: 2rem;
-  font-weight: 300;
-  font-size: 1.4rem;
-  margin-left: 3rem;
   color: #CDD4DE;
+}
+.mainContainer .mainDiv .filterContainer .active {
+  color: black !important;
+}
+.mainContainer .mainDiv .filterContainer .inactive {
+  margin-left: 3rem;
+  color: #CDD4DE !important;
 }
 .mainContainer .mainDiv .userDiv {
   position: absolute;

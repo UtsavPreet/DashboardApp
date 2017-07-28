@@ -52,13 +52,13 @@
         </div>
         <div class="filterContainer">
             {{for filters}}
-            <div class="filterText">
+            <div class="filterText inactive">
                 {{:active}}
             </div>
-            <div class="inactiveFilterText">
+            <div class="filterText inactive">
                 {{:inactive}}
             </div>
-            <div class="inactiveFilterText">
+            <div class="filterText inactive">
                 {{:inactiveSecondary}}
             </div>
             {{/for}}
@@ -71,13 +71,13 @@
                 </div>
             </div>
             <div class="userContainer">
-                {{for users}}
+                {^{for users}}
                 <div class="users">
                     <div class="name">
-                        {{:userName}}
+                        {^{:userName}}
                     </div>
                     <div class="number">
-                        {{:contactNumber}}
+                        {^{:contactNumber}}
                     </div>
                 </div>
                 {{/for}}
@@ -90,19 +90,20 @@
             </div>
             {{/for}}
         </div>
-
+        <div class="dashboardContainer">
+             {{include tmpl="#dashboardTemplate"/}}
+        </div>
     </div>
 </script>
 <script id="dashboardTemplate" type="text/x-jsrender">
-    {^{for userData}}
-         {^{if ~selectedUser!==''}}
+    
         <div class="userDetails">
             <div class="userCard">
                 <div class="contactName">
-                    {^{:userName}}
+                    {{:userName}}
                 </div>
                 <div class="filledTag">
-                    {^{:tag}}
+                    {{:tag}}
                 </div>
                 <div class="review">
                     Left review
@@ -126,15 +127,15 @@
                     </div>
                 </div>
             </div>
-            {^{for preference}}
+            {{for preference}}
             <div class="preferenceCard">
                 <div class="cardHeading">
-                    {^{:cardHeading}}
+                    {{:cardHeading}}
                 </div>
                 <div class="tagContainer">
-                    {^{for tags}}
+                    {{for tags}}
                     <div class="tags">
-                        {^{:tag}}
+                        {{:tag}}
                     </div>
                     {{/for}}
                 </div>
@@ -142,23 +143,23 @@
                     +
                 </div>
             </div>
-            {{/for}} {^{for eventHistory}}
+            {{/for}} {{for eventHistory}}
             <div class="eventHistory">
                 <div class="cardHeading">
-                    {^{:eventCardHeading}}
+                    {{:eventCardHeading}}
                 </div>
                 <div class="eventData">
-                    {^{for eventTags}}
+                    {{for eventTags}}
                     <div class="event">
                         <div class="eventTag">
-                            {^{:name}}
+                            {{:name}}
                         </div>
                         <div class="visitHeading">
                             <div class="visitText">
                                 Visits
                             </div>
                             <div class="visitTag">
-                                {^{:count}}
+                                {{:count}}
                             </div>
                             <div class="changeTag">
                                 +
@@ -174,15 +175,15 @@
                     +
                 </div>
             </div>
-            {{/for}} {^{for userPreference}}
+            {{/for}} {{for userPreference}}
             <div class="preferenceCard">
                 <div class="cardHeading">
-                    {^{:userCardHeading}}
+                    {{:userCardHeading}}
                 </div>
                 <div class="tagContainer">
-                    {^{for userTags}}
+                    {{for userTags}}
                     <div class="userTags">
-                        {^{:hobby}}
+                        {{:hobby}}
                     </div>
                     {{/for}}
                 </div>
@@ -190,71 +191,70 @@
             {{/for}}
         </div>
         <div class="userInfo">
-            {^{for infoCard}}
+            {{for infoCard}}
             <div class="infoCard">
                 <div class="headingText">
-                    {^{:cardHeading}}
+                    {{:cardHeading}}
                 </div>
                 <div class="aboutText">
-                    {^{:about}}
+                    {{:about}}
                 </div>
-                {^{for detail}}
+                {{for detail}}
                 <div class="contactDetails">
                     <div class="heading">
-                        {^{:heading}}
+                        {{:heading}}
                     </div>
                     <div class="detail">
-                        {^{:text}}
+                        {{:text}}
                     </div>
                 </div>
                 {{/for}}
             </div>
-            {{/for}} {^{for eventCard}}
+            {{/for}} {{for eventCard}}
             <div class="eventCard">
                 <div class="headingText">
                     Upcoming Events
                 </div>
-                {^{for eventData}}
+                {{for eventData}}
                 <div class="eventData">
                     <div class="dot">
                     </div>
                     <div class="time">
-                        {^{:time}}
+                        {{:time}}
                     </div>
                     <div class="eventText">
-                        {^{:eventDate}}
+                        {{:eventDate}}
                     </div>
                     <div class="tableNumber">
-                        {^{:tableNumber}}
+                        {{:tableNumber}}
                     </div>
                 </div>
                 {{/for}}
             </div>
             {{/for}}
-            {^{for dinningCard}}
+            {{for dinningCard}}
             <div class="dinningCard">
                 <div class="headingText">
-                    {^{:cardHeading}}
+                    {{:cardHeading}}
                 </div>
-                {^{for dinningData}}
+                {{for dinningData}}
                 <div class="dinningData">
-                    <div class="dot blueDot">
+                    <div class="dot blueDot" style="background:{{:color}}">
 
                     </div>
                     <div class="time blueTime">
-                       {^{:time}}
+                       {{:time}}
                     </div>
                     <div class="eventText">
-                        {^{:eventDate}}
+                        {{:eventDate}}
                     </div>
                     <div class="tableNumber">
-                      {^{:tableNumber}}
+                      {{:tableNumber}}
                     </div>
                 </div>
                 {{/for}}
             </div>
             {{/for}}
             </div>
-       {{/for}}
 </script>
 </html>
