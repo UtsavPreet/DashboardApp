@@ -220,7 +220,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -395,7 +395,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -576,7 +576,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -757,7 +757,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -938,7 +938,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -1119,7 +1119,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -1300,7 +1300,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
@@ -1459,7 +1459,7 @@ var usersData = {
             userPreference: [{
                 userCardHeading: "User Preference",
                 userTags: [{
-                        hobby: "Foodball"
+                        hobby: "football"
                     },
                     {
                         hobby: "Seafood"
