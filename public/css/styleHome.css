@@ -86,15 +86,11 @@ html {
   font-size: 1.4rem;
   color: #5387DE;
 }
-.mainContainer .mainDiv .topBar .dropDown {
-  position: absolute;
-  height: 4.5rem;
-  top: 2rem;
-  right: 15rem;
-}
-.mainContainer .mainDiv .topBar .dropDown .innerImg {
+.mainContainer .mainDiv .topBar .dropdownInnerImg {
   position: absolute;
   height: 2rem;
+  top: 2rem;
+  right: 13rem;
 }
 .mainContainer .mainDiv .topBar .settingsGear {
   position: absolute;
@@ -113,8 +109,8 @@ html {
   font-size: 4rem;
   background-color: #1B5EAC;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 6rem;
+  text-align: center;
   font-weight: 100;
 }
 .mainContainer .mainDiv .filterContainer {
@@ -148,15 +144,11 @@ html {
   font-size: 1.4rem;
   color: #5387DE;
 }
-.mainContainer .mainDiv .filterContainer .dropDown {
-  position: absolute;
-  height: 4.5rem;
-  top: 2rem;
-  right: 15rem;
-}
-.mainContainer .mainDiv .filterContainer .dropDown .innerImg {
+.mainContainer .mainDiv .filterContainer .dropdownInnerImg {
   position: absolute;
   height: 2rem;
+  top: 2rem;
+  right: 13rem;
 }
 .mainContainer .mainDiv .filterContainer .settingsGear {
   position: absolute;
@@ -175,8 +167,8 @@ html {
   font-size: 4rem;
   background-color: #1B5EAC;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 6rem;
+  text-align: center;
   font-weight: 100;
 }
 .mainContainer .mainDiv .filterContainer .filterText {
@@ -495,7 +487,7 @@ html {
 .mainContainer .mainDiv .userDetails .userCard .statContainer {
   position: absolute;
   top: 5rem;
-  height: 17rem;
+  height: 15rem;
   width: 100%;
 }
 .mainContainer .mainDiv .userDetails .userCard .statContainer .image {

@@ -147,7 +147,7 @@ var data = {
             contactNumber: "9999-999-999",
             priority: '0'
         },
-         {
+        {
             userName: "Brent Oram",
             contactNumber: "9999-999-999",
             priority: '1'
@@ -155,8 +155,7 @@ var data = {
     ]
 }
 var usersData = {
-    userData: [
-        {
+    userData: [{
             userName: "Jaye Rowe",
             contactNumber: "9999-999-999",
             tag: "Investor",
@@ -164,19 +163,13 @@ var usersData = {
             preference: [{
                     cardHeading: "Seating Preference",
                     tags: [{
-                            tag: "12"
+                            tag: "3"
                         },
                         {
-                            tag: "12"
+                            tag: "11"
                         },
                         {
-                            tag: "122"
-                        },
-                        {
-                            tag: "1"
-                        },
-                        {
-                            tag: "12"
+                            tag: "27"
                         }
                     ]
                 },
@@ -208,14 +201,14 @@ var usersData = {
                         count: "10"
                     },
                     {
-                        name: "Diwali Party",
-                        visitText: "visits",
-                        count: "100"
-                    },
-                    {
                         name: "Halloween Party",
                         visitText: "visits",
                         count: "1"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
                     },
                     {
                         name: "Halloween Party",
@@ -231,12 +224,6 @@ var usersData = {
                     },
                     {
                         hobby: "Seafood"
-                    },
-                    {
-                        hobby: "Baseball"
-                    },
-                    {
-                        hobby: "Baseball"
                     },
                     {
                         hobby: "Baseball"

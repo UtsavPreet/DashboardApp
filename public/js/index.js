@@ -1,12 +1,20 @@
 var selectedUser;
 var filterText;
 var priorityUser = [];
+var reversedArray =[];
 var reverseCount=0;
 var unsortedArray =[];
 $(document).ready(function () {
     makeTemplates();
     rb('.mainContainer', 'app', data);
     rb('.userContainer', 'user', data.users);
+
+    if(reverseCount==0){
+        unsortedArray = data.users.slice();
+        reversedArray = data.users.reverse();
+        reverseCount=1;
+    }
+
     $('.mainContainer .mainDiv .userDiv .searchBar .searchText').keyup(function () {
         searchData('.mainContainer .mainDiv .userDiv .userContainer .users', '.name', '.searchText', '.searchText');
     });
@@ -67,20 +75,16 @@ function sortArray(filterText) {
     switch (filterText) {
         case 'Alphabetically':
             console.log("its" + filterText);
-            unsortedArray = data.users;
-            data.users.sort((obj1, obj2) => {
+            unsortedArray.sort((obj1, obj2) => {
                 return obj1.userName > obj2.userName
             });
-            priority = false;
+            rb('.userContainer', 'user', unsortedArray);
+            
             break;
         case 'Last Added':
             console.log("its" + filterText);
-            if (reverseCount == 0) {
-                unsortedArray.reverse();
-                reverseCount = 1;
-
-            }
-            priority = false;
+            rb('.userContainer', 'user', reversedArray);
+            
             break;
         case 'VIP':
             console.log("its" + filterText);
@@ -89,37 +93,25 @@ function sortArray(filterText) {
                     priorityUser.push(data.users[i]);
                 }
             }
-            priority = true;
+            rb('.userContainer', 'user', priorityUser);
+            
             break;
 
         default:
             break;
     }
-    bindScreen(priority);
+    bindScreen();
 }
 
-function bindScreen(priority) {
-    if (priority) {
-        rb('.userContainer', 'user', priorityUser);
-        reverseCount = 0;
-        priorityUser = [];
-        bind('.userContainer .users', function () {
+function bindScreen() {
+    priorityUser = [];
+    reverseCount = 0;
+    bind('.userContainer .users', function () {
             console.log("Tapped");
             $('.selected').removeClass('selected');
             $(this).addClass('selected');
             selectedUser = $(this).children('.name').text().trim();
             loadDashboard(selectedUser);
         });
-    } else {
-        rb('.userContainer', 'user', data.users);
-        reverseCount = 0;
-        bind('.userContainer .users', function () {
-            console.log("Tapped");
-            $('.selected').removeClass('selected');
-            $(this).addClass('selected');
-            selectedUser = $(this).children('.name').text().trim();
-            loadDashboard(selectedUser);
-        });
-    }
 
 }
