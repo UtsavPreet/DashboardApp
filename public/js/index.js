@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
     bind('.mainContainer .mainDiv .filterContainer .filterText', function () {
         $('.active').removeClass('active');
+        $('.selectedAlpha').removeClass('selectedAlpha');
         $(this).addClass('active');
         filterText = $(this).text().trim();
         sortArray(filterText);
