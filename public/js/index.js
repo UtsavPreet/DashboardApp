@@ -1,9 +1,10 @@
 var selectedUser;
 var filterText;
 var priorityUser = [];
+var reverseCount=0;
+var unsortedArray =[];
 $(document).ready(function () {
     makeTemplates();
-
     rb('.mainContainer', 'app', data);
     rb('.userContainer', 'user', data.users);
     $('.mainContainer .mainDiv .userDiv .searchBar .searchText').keyup(function () {
@@ -66,16 +67,18 @@ function sortArray(filterText) {
     switch (filterText) {
         case 'Alphabetically':
             console.log("its" + filterText);
-            $(this).addClass('active');
-            data.users.sort((obj1, obj2) => {
+            unsortedArray = data.users;
+            unsortedArray.sort((obj1, obj2) => {
                 return obj1.userName > obj2.userName
             });
-            priority = false;
+            priority = 0;
             break;
         case 'Last Added':
             console.log("its" + filterText);
-            data.users.reverse();
-            priority = false;
+            if (reverseCount == 0) {
+                data.users.reverse();
+            }
+            priority = 1;
             break;
         case 'VIP':
             console.log("its" + filterText);
@@ -84,7 +87,7 @@ function sortArray(filterText) {
                     priorityUser.push(data.users[i]);
                 }
             }
-            priority = true;
+            priority = 2;
             break;
 
         default:
@@ -94,9 +97,10 @@ function sortArray(filterText) {
 }
 
 function bindScreen(priority) {
-    if (priority) {
+    if (priority ==2) {
         rb('.userContainer', 'user', priorityUser);
-        priorityUser=[];
+        reverseCount = 0;
+        priorityUser = [];
         bind('.userContainer .users', function () {
             console.log("Tapped");
             $('.selected').removeClass('selected');
@@ -104,8 +108,19 @@ function bindScreen(priority) {
             selectedUser = $(this).children('.name').text().trim();
             loadDashboard(selectedUser);
         });
-    } else {
+    } else if(priority == 0) {
+        rb('.userContainer', 'user', unsortedArray);
+        bind('.userContainer .users', function () {
+            console.log("Tapped");
+            $('.selected').removeClass('selected');
+            $(this).addClass('selected');
+            selectedUser = $(this).children('.name').text().trim();
+            loadDashboard(selectedUser);
+        });
+    }
+    else if(priority == 1){
         rb('.userContainer', 'user', data.users);
+        reverseCount = 0;
         bind('.userContainer .users', function () {
             console.log("Tapped");
             $('.selected').removeClass('selected');

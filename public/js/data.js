@@ -101,60 +101,63 @@ var data = {
         }
     ],
     users: [{
-            userName: "ADemo User",
+            userName: "Jaye Rowe",
             contactNumber: "9999-999-999",
             priority: '1'
         },
         {
-            userName: "BDemo User",
+            userName: "Raymundo Salido",
             contactNumber: "9999-999-999",
             priority: '0'
 
         },
         {
-            userName: "CDemo User",
+            userName: "Agnus Ogles",
             contactNumber: "9999-999-999",
             priority: '0'
         },
         {
-            userName: "DDemo User",
+            userName: "Fred Toon",
             contactNumber: "9999-999-999",
             priority: '1'
         },
         {
-            userName: "FDemo User",
+            userName: "Gertie Manfre",
+            contactNumber: "9999-999-999",
+            priority: '0'
+        },
+        {
+            userName: "Ladawn Escovedo",
             contactNumber: "9999-999-999",
             priority: '1'
         },
         {
-            userName: "GDemo User",
-            contactNumber: "9999-999-999",
-            priority: '1'
-        },
-        {
-            userName: "EDemo User",
+            userName: "Shelli Mansker",
             contactNumber: "9999-999-999",
             priority: '0'
         },
 
         {
-            userName: "GDemo User",
+            userName: "Emery larioe",
             contactNumber: "9999-999-999",
             priority: '1'
         },
         {
-            userName: "HDemo User",
+            userName: "Kara Malbrough",
+            contactNumber: "9999-999-999",
+            priority: '0'
+        },
+         {
+            userName: "Brent Oram",
             contactNumber: "9999-999-999",
             priority: '1'
-        },
+        }
     ]
 }
 var usersData = {
-    userData: [{
-            userName: "CDemo User"
-        },
+    userData: [
         {
-            userName: "ADemo User",
+            userName: "Jaye Rowe",
             contactNumber: "9999-999-999",
             tag: "Investor",
             about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -167,6 +170,12 @@ var usersData = {
                             tag: "12"
                         },
                         {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
                             tag: "12"
                         }
                     ]
@@ -175,6 +184,12 @@ var usersData = {
                     cardHeading: "Food Preference",
                     tags: [{
                             tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
                         },
                         {
                             tag: "HamBurger"
@@ -193,6 +208,16 @@ var usersData = {
                         count: "10"
                     },
                     {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
                         name: "Halloween Party",
                         visitText: "visits",
                         count: "1"
@@ -206,6 +231,12 @@ var usersData = {
                     },
                     {
                         hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
                     },
                     {
                         hobby: "Baseball"
@@ -245,6 +276,16 @@ var usersData = {
                         time: "17:24",
                         eventDate: "Saturday, May 13",
                         tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
                     }
                 ]
             }],
@@ -252,6 +293,18 @@ var usersData = {
             dinningCard: [{
                 cardHeading: "Dinning History",
                 dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
                         time: "17:24",
                         eventDate: "Saturday, May 13",
                         tableNumber: "Table 3",
@@ -285,7 +338,1093 @@ var usersData = {
             }]
         },
         {
-            userName: "BDemo User",
+            userName: "Emery larioe",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Shelli Mansker",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Ladawn Escovedo",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Gertie Manfre",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Fred Toon",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Agnus Ogles",
+            contactNumber: "9999-999-999",
+            tag: "Investor",
+            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            preference: [{
+                    cardHeading: "Seating Preference",
+                    tags: [{
+                            tag: "12"
+                        },
+                        {
+                            tag: "12"
+                        },
+                        {
+                            tag: "122"
+                        },
+                        {
+                            tag: "1"
+                        },
+                        {
+                            tag: "12"
+                        }
+                    ]
+                },
+                {
+                    cardHeading: "Food Preference",
+                    tags: [{
+                            tag: "Tuna Salad"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "HamBurger"
+                        },
+                        {
+                            tag: "Vegetarian Pizza"
+                        }
+                    ]
+                },
+            ],
+            eventHistory: [{
+                eventCardHeading: "Event History",
+                eventTags: [{
+                        name: "Happy Hours",
+                        visitText: "visits",
+                        count: "10"
+                    },
+                    {
+                        name: "Diwali Party",
+                        visitText: "visits",
+                        count: "100"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    },
+                    {
+                        name: "Halloween Party",
+                        visitText: "visits",
+                        count: "1"
+                    }
+                ]
+            }],
+            userPreference: [{
+                userCardHeading: "User Preference",
+                userTags: [{
+                        hobby: "Foodball"
+                    },
+                    {
+                        hobby: "Seafood"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Baseball"
+                    },
+                    {
+                        hobby: "Beer"
+                    }
+                ]
+            }],
+            infoCard: [{
+                cardHeading: "User Info",
+                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                detail: [{
+                        heading: "Mail",
+                        text: "felish.osrio@gmail.com",
+                    },
+                    {
+                        heading: "Phone",
+                        text: "+9999-999-999",
+                    }
+                ]
+            }],
+
+            eventCard: [{
+                cardHeading: "Upcoming Events",
+                eventData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3"
+                    }
+                ]
+            }],
+
+            dinningCard: [{
+                cardHeading: "Dinning History",
+                dinningData: [{
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "blue",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "grey",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                    {
+                        time: "17:24",
+                        eventDate: "Saturday, May 13",
+                        tableNumber: "Table 3",
+                        color: "green",
+                    },
+                ]
+            }]
+        },
+        {
+            userName: "Raymundo Salido",
             contactNumber: "9999-999-999",
             tag: "Investor",
             about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",

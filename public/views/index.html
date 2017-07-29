@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/screen.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
     <link href="../css/styleHome.css" rel="stylesheet">
 </head>
 
@@ -42,8 +42,11 @@
                 {{:adminName}} {{for roles}}
                 <span class="grey">{{:role}}</span> {{/for}}
             </div>
+            <div class="dropDown">
+                    <img src="../images/arrow.png" class="innerImg" alt="">
+                </div>
             <div class="settingsGear">
-                <img src="../images/gear.png" class="innerImg" alt="">
+                <img src="../images/cog.png" class="innerImg" alt="">
             </div>
             <div class="addDiv">
                 +
@@ -51,7 +54,7 @@
         </div>
         <div class="filterContainer">
             {{for filters}}
-            <div class="filterText">
+            <div class="filterText active">
                 {{:active}}
             </div>
             <div class="filterText">
@@ -68,6 +71,7 @@
                 <div class="phoneText">
                     Phone
                 </div>
+                    <img src="../images/arrow.png" class="dropDownInnerImg" alt="">
             </div>
             <div class="userContainer">
                 {{include tmpl="#userTemplate"/}}
@@ -108,14 +112,24 @@
                     {{:tag}}
                 </div>
                 <div class="review">
-                    Left review
-                    <img src="../images/review.png" class="image" alt="">
+                    <div class="reviewText">
+                         Left review
+                    </div>
+                    <div class="reviewImg">
+                         <img src="../images/review.png" class="image" alt="">
+                    </div>
                 </div>
                 <div class="statContainer">
                     <img src="../images/stat.png" class="image" alt="">
                 </div>
                 <div class="statSummary">
                     <div class="blueDot">
+
+                    </div>
+                    <div class="summaryText">
+                        Walk Ins
+                    </div>
+                    <div class="greenDot">
 
                     </div>
                     <div class="summaryText">
@@ -217,6 +231,7 @@
                 <div class="headingText">
                     Upcoming Events
                 </div>
+                <div class="eventDataContainer">
                 {{for eventData}}
                 <div class="eventData">
                     <div class="dot">
@@ -232,6 +247,7 @@
                     </div>
                 </div>
                 {{/for}}
+                 </div>
             </div>
             {{/for}}
             {{for dinningCard}}
@@ -239,6 +255,7 @@
                 <div class="headingText">
                     {{:cardHeading}}
                 </div>
+                <div class="eventDataContainer">
                 {{for dinningData}}
                 <div class="dinningData">
                     <div class="dot blueDot">
@@ -254,6 +271,7 @@
                     </div>
                 </div>
                 {{/for}}
+                </div>
             </div>
             {{/for}}
             </div>
