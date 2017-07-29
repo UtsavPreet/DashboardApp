@@ -68,17 +68,19 @@ function sortArray(filterText) {
         case 'Alphabetically':
             console.log("its" + filterText);
             unsortedArray = data.users;
-            unsortedArray.sort((obj1, obj2) => {
+            data.users.sort((obj1, obj2) => {
                 return obj1.userName > obj2.userName
             });
-            priority = 0;
+            priority = false;
             break;
         case 'Last Added':
             console.log("its" + filterText);
             if (reverseCount == 0) {
-                data.users.reverse();
+                unsortedArray.reverse();
+                reverseCount = 1;
+
             }
-            priority = 1;
+            priority = false;
             break;
         case 'VIP':
             console.log("its" + filterText);
@@ -87,7 +89,7 @@ function sortArray(filterText) {
                     priorityUser.push(data.users[i]);
                 }
             }
-            priority = 2;
+            priority = true;
             break;
 
         default:
@@ -97,7 +99,7 @@ function sortArray(filterText) {
 }
 
 function bindScreen(priority) {
-    if (priority ==2) {
+    if (priority) {
         rb('.userContainer', 'user', priorityUser);
         reverseCount = 0;
         priorityUser = [];
@@ -108,17 +110,7 @@ function bindScreen(priority) {
             selectedUser = $(this).children('.name').text().trim();
             loadDashboard(selectedUser);
         });
-    } else if(priority == 0) {
-        rb('.userContainer', 'user', unsortedArray);
-        bind('.userContainer .users', function () {
-            console.log("Tapped");
-            $('.selected').removeClass('selected');
-            $(this).addClass('selected');
-            selectedUser = $(this).children('.name').text().trim();
-            loadDashboard(selectedUser);
-        });
-    }
-    else if(priority == 1){
+    } else {
         rb('.userContainer', 'user', data.users);
         reverseCount = 0;
         bind('.userContainer .users', function () {
