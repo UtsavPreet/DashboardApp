@@ -155,7 +155,14 @@ var data = {
     ]
 }
 var usersData = {
-    userData: [{
+    userData: [
+        {
+            userName:"Brent Oram"
+        },
+        {
+            userName:"Kara Malbrough"
+        },
+        {
             userName: "Jaye Rowe",
             contactNumber: "9999-999-999",
             tag: "Investor",
@@ -177,12 +184,6 @@ var usersData = {
                     cardHeading: "Food Preference",
                     tags: [{
                             tag: "Tuna Salad"
-                        },
-                        {
-                            tag: "HamBurger"
-                        },
-                        {
-                            tag: "HamBurger"
                         },
                         {
                             tag: "HamBurger"
@@ -238,7 +239,7 @@ var usersData = {
                 about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                 detail: [{
                         heading: "Mail",
-                        text: "felish.osrio@gmail.com",
+                        text: "jaye.rowe@gmail.com",
                     },
                     {
                         heading: "Phone",
@@ -255,24 +256,24 @@ var usersData = {
                         tableNumber: "Table 3"
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3"
+                        time: "18:24",
+                        eventDate: "Sunday, May 13",
+                        tableNumber: "Table 4"
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3"
+                        time: "19:24",
+                        eventDate: "Monday, May 13",
+                        tableNumber: "Table 5"
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3"
+                        time: "20:24",
+                        eventDate: "Tuesday, May 13",
+                        tableNumber: "Table 6"
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3"
+                        time: "21:24",
+                        eventDate: "Wednesday, May 13",
+                        tableNumber: "Table 7"
                     }
                 ]
             }],
@@ -286,27 +287,27 @@ var usersData = {
                         color: "blue",
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3",
+                        time: "18:24",
+                        eventDate: "Sunday, May 14",
+                        tableNumber: "Table 4",
                         color: "blue",
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3",
+                        time: "19:24",
+                        eventDate: "Monday, May 15",
+                        tableNumber: "Table 5",
                         color: "blue",
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3",
+                        time: "20:24",
+                        eventDate: "Tuesday, May 16",
+                        tableNumber: "Table 6",
                         color: "blue",
                     },
                     {
-                        time: "17:24",
-                        eventDate: "Saturday, May 13",
-                        tableNumber: "Table 3",
+                        time: "21:24",
+                        eventDate: "Wednesday, May 17",
+                        tableNumber: "Table 7",
                         color: "grey",
                     },
                     {
