@@ -760,7 +760,7 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard {
   position: absolute;
-  height: 15rem;
+  height: 14rem;
   width: 100%;
 }
 .mainContainer .mainDiv .userInfo .infoCard .headingText {
@@ -777,19 +777,19 @@ html {
 }
 .mainContainer .mainDiv .userInfo .infoCard .aboutText {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-left: 1rem;
-  padding-bottom: 1rem;
   max-width: 25rem;
-  height: 5rem;
+  height: 3.5rem;
   line-height: 1.8rem;
   font-size: 1.2rem;
 }
 .mainContainer .mainDiv .userInfo .infoCard .contactDetails {
   position: relative;
+  padding-top: 1.4rem;
   padding-left: 1rem;
   height: 3rem;
-  line-height: 3rem;
+  line-height: 2rem;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -804,7 +804,7 @@ html {
 .mainContainer .mainDiv .userInfo .eventCard {
   position: absolute;
   height: 15rem;
-  top: 15rem;
+  top: 14rem;
   background-color: #fff;
   width: 100%;
 }
@@ -878,7 +878,7 @@ html {
 .mainContainer .mainDiv .userInfo .dinningCard {
   position: relative;
   position: absolute;
-  top: 30rem;
+  top: 29rem;
   bottom: 0;
   width: 100%;
   overflow-y: auto;
@@ -898,7 +898,7 @@ html {
 .mainContainer .mainDiv .userInfo .dinningCard .eventDataContainer {
   position: absolute;
   top: 3rem;
-  bottom: 2rem;
+  bottom: 3rem;
   overflow-y: scroll;
   width: 100%;
 }
